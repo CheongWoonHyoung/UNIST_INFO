@@ -28,6 +28,7 @@
     <string name="call_dialog_contents">연결하시겠습니까?</string>
     <string name="call_dialog_confirm">확인</string>
     <string name="call_dialog_cancel">취소</string>
+    <string name="title_activity_send_message">SendMessage</string>
 
 
 </resources>
