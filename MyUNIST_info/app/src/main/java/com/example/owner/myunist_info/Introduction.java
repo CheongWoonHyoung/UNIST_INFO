@@ -16,7 +16,7 @@ public class Introduction extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.introduction);
+        setContentView(R.layout.explanation_1);
 
 //        TextView dept_Name = (TextView) findViewById(R.id.dept);
         Intent intent = getIntent();
