@@ -19,7 +19,7 @@ public class Introduction extends FragmentActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.explanation_1);
+        setContentView(R.layout.introduction);
 
 //        TextView dept_Name = (TextView) findViewById(R.id.dept);
         Intent intent = getIntent();

@@ -7,6 +7,7 @@ import android.support.v7.internal.view.menu.MenuBuilder;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import static android.view.LayoutInflater.from;
 
@@ -37,7 +38,6 @@ public class Intro_Subpager_Fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         intro_context = container.getContext();
 
-
         switch(order_of_page){
             case 0:
                 intro_View = (View) from(intro_context).inflate(R.layout.intropage1, container, false);
@@ -52,6 +52,7 @@ public class Intro_Subpager_Fragment extends Fragment {
                     case 8:
                     case 9:
                 }
+                break;
             case 1:
                 intro_View = (View) from(intro_context).inflate(R.layout.intropage2, container, false);
                 switch(department_id){
@@ -65,6 +66,7 @@ public class Intro_Subpager_Fragment extends Fragment {
                     case 8:
                     case 9:
                 }
+                break;
             case 2:
                 intro_View = (View) from(intro_context).inflate(R.layout.intropage3, container, false);
                 switch(department_id){
@@ -78,6 +80,7 @@ public class Intro_Subpager_Fragment extends Fragment {
                     case 8:
                     case 9:
                 }
+                break;
             case 3:
                 intro_View = (View) from(intro_context).inflate(R.layout.intropage4, container, false);
                 switch(department_id){
@@ -91,6 +94,7 @@ public class Intro_Subpager_Fragment extends Fragment {
                     case 8:
                     case 9:
                 }
+                break;
             case 4:
                 intro_View = (View) from(intro_context).inflate(R.layout.intropage5, container, false);
                 switch(department_id){
@@ -104,7 +108,7 @@ public class Intro_Subpager_Fragment extends Fragment {
                     case 8:
                     case 9:
                 }
-
+                break;
             default:
                 break;
 
