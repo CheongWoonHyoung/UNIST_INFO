@@ -1,6 +1,7 @@
 package com.example.owner.myunist_info;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -9,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -69,7 +71,12 @@ public class SendMessage extends Activity {
                     }
                 };
                 task.execute();
-
+                Toast.makeText(SendMessage.this, "Send Clear", Toast.LENGTH_SHORT).show();
+                finish();
+                /*
+                Intent intent = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(intent);
+*/
             }
         });
     }
