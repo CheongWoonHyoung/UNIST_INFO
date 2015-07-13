@@ -59,31 +59,28 @@ public class MyPage  extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mycontext,MyPage_Option.class);
-                intent.putExtra("OPT",1);
-                startActivityForResult(intent, OPTION_INTENT_CODE);
+                Intent intent = new Intent(mycontext,SendMessage.class);
+                startActivity(intent);
             }
         });
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mycontext,MyPage_Option.class);
-                intent.putExtra("OPT",2);
-                startActivityForResult(intent, OPTION_INTENT_CODE);
+                startActivity(intent);
             }
         });
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mycontext,MyPage_Option.class);
-                intent.putExtra("OPT",3);
-                startActivityForResult(intent, OPTION_INTENT_CODE);
+                startActivity(intent);
             }
         });
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mycontext,MyPage_Option.class);
+                Intent intent = new Intent(mycontext,DeveloperInfo.class);
                 intent.putExtra("OPT",4);
                 startActivityForResult(intent, OPTION_INTENT_CODE);
             }
@@ -99,8 +96,7 @@ public class MyPage  extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(mycontext,MyPage_Option.class);
-                intent.putExtra("OPT",6);
-                startActivityForResult(intent, OPTION_INTENT_CODE);
+                startActivity(intent);
             }
         });
 

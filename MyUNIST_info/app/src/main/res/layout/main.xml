@@ -3,7 +3,9 @@
     android:id="@+id/mainlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:baselineAligned="false"
+    android:background="@drawable/unistbg">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="10px"
@@ -64,8 +66,7 @@
                         android:id="@+id/b14"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/EE"
-                        />
+                        android:background="@drawable/ba" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c15"
@@ -77,8 +78,7 @@
                         android:id="@+id/b15"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/CSE"
-                        />
+                        android:background="@drawable/chem" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -109,8 +109,7 @@
                         android:id="@+id/b23"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/ECHE"
-                        />
+                        android:background="@drawable/cse" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c24"
@@ -122,8 +121,7 @@
                         android:id="@+id/b24"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/PHYSICS"
-                        />
+                        android:background="@drawable/dhe" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c25"
@@ -135,8 +133,7 @@
                         android:id="@+id/b25"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/MATH"
-                        />
+                        android:background="@drawable/ece" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -175,8 +172,7 @@
                         android:id="@+id/b33"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/MECHANIC"
-                        />
+                        android:background="@drawable/ee" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c34"
@@ -188,8 +184,7 @@
                         android:id="@+id/b34"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/URBAN"
-                        />
+                        android:background="@drawable/ls" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c35"
@@ -201,8 +196,7 @@
                         android:id="@+id/b35"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/BUSINESS"
-                        />
+                        android:background="@drawable/mne" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -227,8 +221,7 @@
                         android:id="@+id/b42"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/LIFE"
-                        />
+                        android:background="@drawable/mse" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c43"
@@ -240,8 +233,7 @@
                         android:id="@+id/b43"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/MATERIAL"
-                        />
+                        android:background="@drawable/mth" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c44"
@@ -253,8 +245,7 @@
                         android:id="@+id/b44"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/DESIGN"
-                        />
+                        android:background="@drawable/phy" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c45"
@@ -266,8 +257,7 @@
                         android:id="@+id/b45"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/CHEMISTRY"
-                        />
+                        android:background="@drawable/uee" />
                 </LinearLayout>
 
             </LinearLayout>
