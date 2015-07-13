@@ -4,7 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:baselineAligned="false">
+    android:baselineAligned="false"
+    android:background="@drawable/unistbg">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="10px"
@@ -65,7 +66,7 @@
                         android:id="@+id/b14"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/ee" />
+                        android:background="@drawable/ba" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c15"
@@ -77,7 +78,7 @@
                         android:id="@+id/b15"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/cse" />
+                        android:background="@drawable/chem" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -108,7 +109,7 @@
                         android:id="@+id/b23"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/chem" />
+                        android:background="@drawable/cse" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c24"
@@ -120,7 +121,7 @@
                         android:id="@+id/b24"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/phy" />
+                        android:background="@drawable/dhe" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c25"
@@ -132,7 +133,7 @@
                         android:id="@+id/b25"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/mth" />
+                        android:background="@drawable/ece" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -171,7 +172,7 @@
                         android:id="@+id/b33"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/mne" />
+                        android:background="@drawable/ee" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c34"
@@ -183,7 +184,7 @@
                         android:id="@+id/b34"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/uee" />
+                        android:background="@drawable/ls" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c35"
@@ -195,7 +196,7 @@
                         android:id="@+id/b35"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/ba" />
+                        android:background="@drawable/mne" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -220,7 +221,7 @@
                         android:id="@+id/b42"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/ls" />
+                        android:background="@drawable/mse" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c43"
@@ -232,7 +233,7 @@
                         android:id="@+id/b43"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/mse" />
+                        android:background="@drawable/mth" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c44"
@@ -244,7 +245,7 @@
                         android:id="@+id/b44"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/dhe" />
+                        android:background="@drawable/phy" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c45"
@@ -256,7 +257,7 @@
                         android:id="@+id/b45"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/ece" />
+                        android:background="@drawable/uee" />
                 </LinearLayout>
 
             </LinearLayout>

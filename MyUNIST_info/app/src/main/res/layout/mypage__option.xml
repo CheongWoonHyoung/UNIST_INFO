@@ -10,6 +10,6 @@
         android:id="@+id/option"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="zzzzzzzzzzz"/>
+        android:text="MY PAGE OPTION IT IS DUMMY XML, TO BE DELETED"/>
 
 </RelativeLayout>

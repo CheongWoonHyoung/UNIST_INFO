@@ -1,5 +1,6 @@
 package com.example.owner.myunist_info;
 
+import android.app.Activity;
 import android.os.AsyncTask;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -16,7 +17,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 
-public class SendMessage extends ActionBarActivity {
+public class SendMessage extends Activity {
 
     EditText edt_name;
     EditText edt_mail;
