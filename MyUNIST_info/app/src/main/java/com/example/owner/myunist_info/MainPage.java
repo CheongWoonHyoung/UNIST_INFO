@@ -104,7 +104,7 @@ public class MainPage extends Fragment {
         button5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(maincontext,Introduction.class);
+                Intent intent = new Intent(maincontext,SendMessage.class);
                 intent.putExtra("DEPT",5);
                 startActivityForResult(intent,INTRODUCTION_INTENT_CODE);
             }
