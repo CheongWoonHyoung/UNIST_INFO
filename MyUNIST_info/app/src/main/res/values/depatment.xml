@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name = "EE_txt_1">1</string>
+    <string name = "EE_txt_2">2</string>
+    <string name = "EE_txt_3">3</string>
+
+    <string name = "CSE_txt_1">1</string>
+    <string name = "CSE_txt_2">2</string>
+    <string name = "CSE_txt_3">3</string>
+
+    <string name = "ECHE_txt_1">1</string>
+    <string name = "ECHE_txt_2">2</string>
+    <string name = "ECHE_txt_3">3</string>
+
+    <string name = "PHYSICS_txt_1">1</string>
+    <string name = "PHYSICS_txt_2">2</string>
+    <string name = "PHYSICS_txt_3">3</string>
+
+    <string name = "MATH_txt_1">1</string>
+    <string name = "MATH_txt_2">2</string>
+    <string name = "MATH_txt_3">3</string>
+
+    <string name = "MECHANIC_txt_1">1</string>
+    <string name = "MECHANIC_txt_2">2</string>
+    <string name = "MECHANIC_txt_3">3</string>
+
+    <string name = "URBAN_txt_1">1</string>
+    <string name = "URBAN_txt_2">2</string>
+    <string name = "URBAN_txt_3">3</string>
+
+    <string name = "BUSINNESS_txt_1">1</string>
+    <string name = "BUSINNESS_txt_2">2</string>
+    <string name = "BUSINNESS_txt_3">3</string>
+
+    <string name = "LIFE_txt_1">1</string>
+    <string name = "LIFE_txt_2">2</string>
+    <string name = "LIFE_txt_3">3</string>
+
+    <string name = "MATERIAL_txt_1">1</string>
+    <string name = "MATERIAL_txt_2">2</string>
+    <string name = "MATERIAL_txt_3">3</string>
+
+    <string name = "DESIGN_txt_1">1</string>
+    <string name = "DESIGN_txt_2">2</string>
+    <string name = "DESIGN_txt_3">3</string>
+
+    <string name = "CHEMISTRY_txt_1">1</string>
+    <string name = "CHEMISTRY_txt_2">2</string>
+    <string name = "CHEMISTRY_txt_3">3</string>
+
+</resources>
