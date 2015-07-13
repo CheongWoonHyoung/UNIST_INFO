@@ -59,7 +59,7 @@ public class MyPage  extends Fragment {
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mycontext,MyPage_Option.class);
+                Intent intent = new Intent(mycontext,SendMessage.class);
                 intent.putExtra("OPT",1);
                 startActivityForResult(intent, OPTION_INTENT_CODE);
             }
@@ -83,7 +83,7 @@ public class MyPage  extends Fragment {
         button4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mycontext,MyPage_Option.class);
+                Intent intent = new Intent(mycontext,DeveloperInfo.class);
                 intent.putExtra("OPT",4);
                 startActivityForResult(intent, OPTION_INTENT_CODE);
             }

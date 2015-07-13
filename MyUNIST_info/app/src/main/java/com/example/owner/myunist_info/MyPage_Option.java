@@ -20,7 +20,7 @@ public class MyPage_Option extends ActionBarActivity {
         int opt_num  = intent.getIntExtra("OPT",0);
         switch(opt_num){
             case 1:
-                setContentView(R.layout.mypage__option);
+                setContentView(R.layout.activity_send_message);
                 break;
             case 2:
                 setContentView(R.layout.mypage__option);
@@ -29,7 +29,7 @@ public class MyPage_Option extends ActionBarActivity {
                 setContentView(R.layout.attendance);
                 break;
             case 4:
-                setContentView(R.layout.mypage__option);
+                setContentView(R.layout.activity_developer_info);
                 break;
             case 5:
                 setContentView(R.layout.mypage__option);

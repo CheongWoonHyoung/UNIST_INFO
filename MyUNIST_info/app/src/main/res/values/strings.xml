@@ -29,5 +29,8 @@
     <string name="call_dialog_confirm">확인</string>
     <string name="call_dialog_cancel">취소</string>
     <string name="title_activity_send_message">SendMessage</string>
+    <string name="title_activity_developer_info">DeveloperInfo</string>
+    <string name="Developer_info">Developer By.</string>
+    <string name="Developer_Slogan">\"코딩이 미래다.\"</string>
 
 </resources>
