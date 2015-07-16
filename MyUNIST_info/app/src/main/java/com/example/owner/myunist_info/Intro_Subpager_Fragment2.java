@@ -51,7 +51,7 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                         depart_name_ko.setText("자연과학부");
                         depart_name_eng.setText("Natural Science");
                         title.setText(R.string.SNS_txt_0);
-                        contents.setText("자연과학은 자연계에 존재하는 보편적인 법칙을 찾아내고 이해함으로써 인류의 발전에 공헌하는 것을 목표로 하는 학문입니다. \n 역사적으로 이러한 자연과학적인 결과를 공학과 융합하는 방법으로 시대를 선도하는 새로운 테크놀로지가 개발되어 왔고, UNIST는 그런 융합을 학교 발전의 주요 전략의 하나로 채택하여 수행하고 있습니다. \n UNIST의 자연가학부는 기초과학 교육을 담다아고, 창의적인 학제간 연구를 수행하는 것을 목표로 2010년에 창설되어 운영되어 왔습니다. \n 최고수준의 자연과학 연구를 수행하기 위해 국내외의 세계적인 석학 유치와 국제과학비즈니스벨트 캠퍼스 연구단 선정 등으로 국내는 물론 세계에서도 인정받는 학부로 성장하고 있습니다.\n");
+                        contents.setText("자연과학은 자연계에 존재하는 보편적인 법칙을 찾아내고 이해함으로써 인류의 발전에 공헌하는 것을 목표로 하는 학문입니다. \n 역사적으로 이러한 자연과학적인 결과를 공학과 융합하는 방법으로 시대를 선도하는 새로운 테크놀로지가 개발되어 왔고, UNIST는 그런 융합을 학교 발전의 주요 전략의 하나로 채택하여 수행하고 있습니다. \n UNIST의 자연과학부는 기초과학 교육을 담당하고, 창의적인 학제간 연구를 수행하는 것을 목표로 2010년에 창설되어 운영되어 왔습니다. \n 최고수준의 자연과학 연구를 수행하기 위해 국내외의 세계적인 석학 유치와 국제과학비즈니스벨트 캠퍼스 연구단 선정 등으로 국내는 물론 세계에서도 인정받는 학부로 성장하고 있습니다.\n");
                         break;
                     case 9:
                         depart_name_ko.setText("도시환경공학부");
@@ -83,7 +83,7 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                 }
                 break;
             case 2:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage3, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.intropage2, container, false);
                 TextView intro_track2 = (TextView) intro_View.findViewById(R.id.intro_track);
                 TextView track_name2 = (TextView) intro_View.findViewById(R.id.name_track);
                 TextView content2 = (TextView) intro_View.findViewById(R.id.contents);
@@ -101,7 +101,7 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                 }
                 break;
             case 3:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage3, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.intropage2, container, false);
                 TextView intro_track3 = (TextView) intro_View.findViewById(R.id.intro_track);
                 TextView track_name3 = (TextView) intro_View.findViewById(R.id.name_track);
                 TextView content3 = (TextView) intro_View.findViewById(R.id.contents);

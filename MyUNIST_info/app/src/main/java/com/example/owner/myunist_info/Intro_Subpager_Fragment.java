@@ -50,7 +50,6 @@ public class Intro_Subpager_Fragment extends Fragment {
                 TextView depart_name_eng = (TextView) intro_View.findViewById(R.id.depat_name_eng);
                 TextView title = (TextView) intro_View.findViewById(R.id.title);
                 TextView contents = (TextView) intro_View.findViewById(R.id.contents);
-                ScrollView scroll1 = (ScrollView) intro_View.findViewById(R.id.scr1);
                 switch(department_id){
                     case 1:
                         depart_name_ko.setText("디자인 및 인간공학부");
