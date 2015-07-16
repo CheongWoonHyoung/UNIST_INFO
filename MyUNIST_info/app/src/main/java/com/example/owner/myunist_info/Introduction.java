@@ -30,7 +30,7 @@ public class Introduction extends FragmentActivity {
 
         intro_pager = (ViewPager) findViewById(R.id.intropager);
 
-        if(dept_id != 8) {
+        if(dept_id != 8 && dept_id != 9) {
             intro_pager.setAdapter(new Introduction_Fragment_pager_adapter(getSupportFragmentManager(), dept_id));
         }
         else {

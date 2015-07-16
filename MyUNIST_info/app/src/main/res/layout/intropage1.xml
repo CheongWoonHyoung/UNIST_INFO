@@ -3,68 +3,86 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="10">
+    android:weightSum="20">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="4dp"
-        android:layout_weight="4"
+        android:layout_weight="8"
         android:background="#DDDDDD">
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:layout_margin="15dp"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:background="@drawable/eebg">
             <TextView
+                android:id = "@+id/depart_name_ko"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Department"
-                android:textSize="30dp"/>
+                android:textSize="25dp"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="13dp" />
             <TextView
+                android:id = "@+id/depat_name_eng"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Subdepartment name"
-                android:textSize="13dp"/>
+                android:textSize="13dp"
+                android:layout_marginLeft="14dp" />
         </LinearLayout>
-
 
 
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="4dp"
-        android:layout_weight="6"
+        android:layout_weight="12"
         android:orientation="vertical"
         android:background="#FFFFFF">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="3"
+            android:layout_height="wrap_content"
             android:orientation="vertical"
             android:background="#EEEEEE">
             <TextView
-                android:layout_width="match_parent"
+                android:id="@+id/title"
+                android:layout_width="290dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="15dp"
-                android:text="Title"
-                android:textSize="50dp"/>
+                android:text="Title Idjksa jjuhuihuihuihuihui"
+                android:textSize="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="bold" />
 
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:layout_marginLeft="15dp"
-            android:layout_marginRight="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
             android:background="#222222"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="7"
-            android:layout_margin="15dp"
-            android:text="contents"
-            android:textSize="50dp">
+        <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp">
+                <TextView
+                    android:id="@+id/contents"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="50dp"
+                    android:text="contents"
+                    android:textSize="13dp">
 
-        </TextView>
+            </TextView>
+        </ScrollView>
 
     </LinearLayout>
 

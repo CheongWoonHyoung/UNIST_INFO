@@ -25,7 +25,7 @@ public class Introduction_Fragment_pager_adapter2 extends FragmentPagerAdapter {
                 case 3:
                 case 4:
                 case 5:
-                    return Intro_Subpager_Fragment.newProduction(position, depart_id);
+                    return Intro_Subpager_Fragment2.newProduction(position, depart_id);
                 default:
                     return null;
             }
