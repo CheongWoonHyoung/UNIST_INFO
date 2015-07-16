@@ -27,13 +27,15 @@ public class Introduction extends FragmentActivity {
         //학과 고유 ID
         int dept_id  = intent.getIntExtra("DEPT", 0);
 
+
         intro_pager = (ViewPager) findViewById(R.id.intropager);
 
-
-        //학과 분류 레이아웃별로 학과소개를 넣는 switch 구문 ( (그림+글)X3 )
-        intro_pager.setAdapter(new Introduction_Fragment_pager_adapter(getSupportFragmentManager(),dept_id));
-
-
+        if(dept_id != 8) {
+            intro_pager.setAdapter(new Introduction_Fragment_pager_adapter(getSupportFragmentManager(), dept_id));
+        }
+        else {
+            intro_pager.setAdapter(new Introduction_Fragment_pager_adapter2(getSupportFragmentManager(), dept_id));
+        }
 
     }
 
