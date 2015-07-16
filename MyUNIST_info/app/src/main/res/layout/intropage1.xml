@@ -13,7 +13,6 @@
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_margin="15dp"
             android:orientation="vertical"
             android:background="@drawable/eebg">
             <TextView
@@ -44,19 +43,20 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#EEEEEE">
+            android:orientation="vertical">
             <TextView
                 android:id="@+id/title"
                 android:layout_width="290dp"
                 android:layout_height="wrap_content"
                 android:text="Title Idjksa jjuhuihuihuihuihui"
-                android:textSize="25dp"
-                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:layout_marginTop="15dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="15dp"
-                android:layout_marginBottom="10dp"
-                android:textStyle="bold" />
+                android:layout_marginBottom="15dp"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:textColor="#000000" />
 
         </LinearLayout>
         <LinearLayout
@@ -68,7 +68,7 @@
         <ScrollView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-            android:layout_marginLeft="15dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginRight="15dp">
                 <TextView
                     android:id="@+id/contents"
