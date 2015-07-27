@@ -12,7 +12,7 @@
         android:background="#DDDDDD">
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="match_parent"
+            android:layout_height="260dp"
             android:orientation="vertical"
             android:background="@drawable/eebg">
             <TextView
@@ -79,7 +79,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginBottom="50dp"
                     android:text="contents"
-                    android:textSize="13dp">
+                    android:textSize="17dp">
 
             </TextView>
         </ScrollView>
