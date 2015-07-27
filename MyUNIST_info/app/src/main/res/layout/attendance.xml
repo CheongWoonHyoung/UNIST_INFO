@@ -4,13 +4,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/attendbg"
-    tools:context="com.example.owner.myunist_info.Authentication"
-    android:id="@+id/attendance"
-    android:gravity="bottom">
+    android:background="@drawable/devbackground"
+    tools:context="com.example.owner.myunist_info.Authentication">
 
     <LinearLayout
         android:layout_gravity="center"
+        android:layout_marginTop="30dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -20,13 +19,13 @@
 
             <Button
                 android:id="@+id/check_ba"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/ba"/>
             <Button
                 android:id="@+id/unchecked_ba"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
 
@@ -39,14 +38,14 @@
             <Button
                 android:id="@+id/check_chem"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/chem"/>
             <Button
                 android:id="@+id/unchecked_chem"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
         </RelativeLayout>
@@ -57,14 +56,14 @@
             <Button
                 android:id="@+id/check_cse"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/cse"/>
             <Button
                 android:id="@+id/unchecked_cse"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
         </RelativeLayout>
 
@@ -72,7 +71,7 @@
 
     <LinearLayout
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -83,13 +82,13 @@
 
             <Button
                 android:id="@+id/check_ece"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/ece"/>
             <Button
                 android:id="@+id/unchecked_ece"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
         </RelativeLayout>
 
@@ -99,14 +98,14 @@
             <Button
                 android:id="@+id/check_ee"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/ee"/>
             <Button
                 android:id="@+id/unchecked_ee"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
         </RelativeLayout>
@@ -117,14 +116,14 @@
             <Button
                 android:layout_marginLeft="20dp"
                 android:id="@+id/check_mse"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/mse"/>
             <Button
                 android:layout_marginLeft="20dp"
                 android:id="@+id/unchecked_mse"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
         </RelativeLayout>
@@ -132,7 +131,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -141,13 +140,13 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/check_mne"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/mne"/>
             <Button
                 android:id="@+id/unchecked_mne"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
         </RelativeLayout>
@@ -157,14 +156,14 @@
             <Button
                 android:id="@+id/check_mth"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/mth"/>
             <Button
                 android:id="@+id/unchecked_mth"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
         </RelativeLayout>
@@ -175,14 +174,14 @@
             <Button
                 android:id="@+id/check_phy"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/phy"/>
             <Button
                 android:id="@+id/unchecked_phy"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
         </RelativeLayout>
@@ -190,7 +189,7 @@
     </LinearLayout>
     <LinearLayout
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -199,13 +198,13 @@
             android:layout_height="wrap_content">
             <Button
                 android:id="@+id/check_uee"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/uee"/>
             <Button
                 android:id="@+id/unchecked_uee"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
 
@@ -218,14 +217,14 @@
             <Button
                 android:id="@+id/check_dhe"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/dhe"/>
             <Button
                 android:id="@+id/unchecked_dhe"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
         </RelativeLayout>
@@ -236,14 +235,14 @@
             <Button
                 android:id="@+id/check_ls"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/ls"/>
             <Button
                 android:id="@+id/unchecked_ls"
                 android:layout_marginLeft="20dp"
-                android:layout_width="70dp"
-                android:layout_height="70dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
                 android:background="@drawable/unchecked"/>
 
         </RelativeLayout>
@@ -255,10 +254,7 @@
         android:layout_marginTop="30dp"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:text="CLEAR"
-        android:background="#00b1b7"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="50dp" />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CLEAR"/>
 </LinearLayout>
