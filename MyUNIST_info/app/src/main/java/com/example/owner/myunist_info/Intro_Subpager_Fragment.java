@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 
@@ -63,6 +64,9 @@ public class Intro_Subpager_Fragment extends Fragment {
                 TextView contents = (TextView) intro_View.findViewById(R.id.contents);
                 switch(department_id){
                     case 1:
+                        LinearLayout mla;
+                        mla = (LinearLayout) intro_View.findViewById(R.id.topPanel);
+                        mla.setBackgroundResource(R.drawable.eebg);
                         depart_name_ko.setText("디자인 및 인간공학부");
                         depart_name_eng.setText("Design and Human Engineering");
                         title.setText(R.string.DHE_txt_0);
