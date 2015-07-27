@@ -101,8 +101,7 @@
                     android:layout_width="10px"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
-                    android:orientation="vertical"
-                    android:background="@drawable/chem">
+                    android:orientation="vertical">
                 </LinearLayout>
             </LinearLayout>
 
@@ -193,7 +192,7 @@
                         android:id="@+id/b33"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/ee" />
+                        android:background="@drawable/ece" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c34"
@@ -266,7 +265,7 @@
                         android:id="@+id/b44"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:background="@drawable/phy" />
+                        android:background="@drawable/sns" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c45"
