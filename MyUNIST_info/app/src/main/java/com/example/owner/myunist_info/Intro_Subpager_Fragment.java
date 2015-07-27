@@ -6,11 +6,8 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ScrollView;
 import android.widget.TextView;
 
-
-import org.w3c.dom.Text;
 
 import static android.view.LayoutInflater.from;
 
@@ -192,7 +189,7 @@ public class Intro_Subpager_Fragment extends Fragment {
                 }
                 break;
             case 3:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage4, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.intropage_dhe, container, false);
                 switch(department_id){
                     case 1:
                     case 2:
