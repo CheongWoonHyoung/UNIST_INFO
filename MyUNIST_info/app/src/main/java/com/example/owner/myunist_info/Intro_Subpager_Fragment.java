@@ -203,7 +203,6 @@ public class Intro_Subpager_Fragment extends Fragment {
                 }
                 break;
             case 3:
-
                 switch(department_id){
                     case 1:
                         intro_View = (View) from(intro_context).inflate(R.layout.intropage_dhe, container, false);

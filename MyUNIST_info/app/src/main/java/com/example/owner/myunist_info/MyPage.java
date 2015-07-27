@@ -73,7 +73,7 @@ public class MyPage  extends Fragment {
         button3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mycontext,MyPage_Option.class);
+                Intent intent = new Intent(mycontext,Attendance.class);
                 startActivity(intent);
             }
         });
