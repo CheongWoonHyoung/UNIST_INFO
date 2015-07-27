@@ -33,5 +33,7 @@
     <string name="Developer_info">Developer By.</string>
     <string name="Developer_Slogan">\"코딩이 미래다.\"</string>
     <string name="title_activity_attendance" />
+    <string name="title_activity_splash1">Splash1</string>
+    <string name="title_activity_splash2">Splash2</string>
 
 </resources>
