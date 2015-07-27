@@ -32,6 +32,10 @@
             android:label="@string/title_activity_authentication" >
         </activity>
         <activity
+            android:name=".Attendance"
+            android:label="@string/title_activity_attendance" >
+        </activity>
+        <activity
             android:name=".SendMessage"
             android:label="@string/title_activity_send_message" >
         </activity>
@@ -39,6 +43,7 @@
             android:name=".DeveloperInfo"
             android:label="@string/title_activity_developer_info">
         </activity>
+
     </application>
 
 </manifest>

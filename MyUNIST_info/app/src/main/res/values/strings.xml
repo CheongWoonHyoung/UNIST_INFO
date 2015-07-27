@@ -32,5 +32,6 @@
     <string name="title_activity_developer_info">DeveloperInfo</string>
     <string name="Developer_info">Developer By.</string>
     <string name="Developer_Slogan">\"코딩이 미래다.\"</string>
+    <string name="title_activity_attendance" />
 
 </resources>
