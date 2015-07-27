@@ -41,43 +41,43 @@
                     android:textSize="30dp"
                     android:paddingBottom="25dp"
                     />
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="무기화학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn1"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="전기화학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn2"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="고체화학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn3"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="에너지 변환 및 저장실험"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn4"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="고분자재료과학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn5"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="기기분석"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn6"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="태양전자실험"
@@ -99,31 +99,31 @@
                     android:textSize="30dp"
                     android:paddingBottom="25dp"
                     />
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="유기화학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn8"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="물리화학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn9"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="전달현상"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn10"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="화학공정개론"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn11"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="화공열역학"

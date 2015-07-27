@@ -13,11 +13,7 @@
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Introduction"
@@ -41,9 +37,21 @@
         </activity>
         <activity
             android:name=".DeveloperInfo"
-            android:label="@string/title_activity_developer_info">
+            android:label="@string/title_activity_developer_info" >
         </activity>
+        <activity
+            android:name=".Splash1"
+            android:label="@string/title_activity_splash1" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Splash2"
+            android:label="@string/title_activity_splash2" >
+        </activity>
     </application>
 
 </manifest>
