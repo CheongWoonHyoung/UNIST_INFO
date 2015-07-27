@@ -13,18 +13,18 @@ import android.widget.Toast;
 public class Authentication extends Activity {
     EditText editText;
     Button button;
-    private String ba = "0001";
-    private String chem = "0002";
-    private String cse = "0003";
-    private String ece = "0004";
-    private String ee = "0005";
-    private String mse = "0006";
-    private String mne = "0007";
-    private String mth = "0008";
-    private String phy = "0009";
-    private String uee = "0010";
-    private String dhe = "0011";
-    private String ls = "0012";
+    private String ba = "3141";
+    private String chem = "5926";
+    private String cse = "5358";
+    private String ece = "9793";
+    private String ee = "2384";
+    private String mse = "6264";
+    private String mne = "3383";
+    private String mth = "2795";
+    private String phy = "0288";
+    private String uee = "4197";
+    private String dhe = "1693";
+    private String ls = "9937";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
