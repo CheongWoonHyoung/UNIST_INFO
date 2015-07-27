@@ -3,11 +3,8 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-<<<<<<< HEAD
     android:background="@drawable/intro2"
     >
-=======
-    android:background="@drawable/devbackground">
->>>>>>> JH_1
+
 
 </LinearLayout>
