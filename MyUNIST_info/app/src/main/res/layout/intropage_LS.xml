@@ -40,25 +40,25 @@
                     android:text ="생명공학"
                     android:textSize="30dp"
                     android:paddingBottom="25dp" />
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="생명공학개론"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn1"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="바이오기기분석"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn2"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="생체유기역학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn3"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="바이오재료 및 조직공학"
@@ -80,25 +80,25 @@
                     android:textSize="30dp"
                     android:paddingBottom="25dp"
                     />
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="생화학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn5"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="발생학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn6"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="세포생물학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn7"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text ="해부 및 생리학"
