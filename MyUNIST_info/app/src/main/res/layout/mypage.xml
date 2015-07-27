@@ -3,12 +3,29 @@
     android:id="@+id/mainlayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
-    <LinearLayout
+    android:orientation="vertical"
+    android:background="@drawable/main2bg">
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="10px"
-        android:layout_weight="1">
-    </LinearLayout>
+        android:layout_weight="1"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:id="@+id/upper">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Be a UNISTAR!"
+            android:id="@+id/unistar"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="27dp"
+            android:background="#00b1b7"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp" />
+    </RelativeLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -102,7 +119,9 @@
                         android:id="@+id/b25"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/QUESTION"/>
+                        android:text="Q&amp;A"
+                        android:background="#0a0857"
+                        android:textColor="#FFFFFF" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -148,7 +167,9 @@
                         android:id="@+id/b34"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/ANNOUNCEMENT"/>
+                        android:text="ANNOUNCE"
+                        android:background="#0a0857"
+                        android:textColor="#FFFFFF" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c35"
@@ -160,7 +181,9 @@
                         android:id="@+id/b35"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/ATTENDANCE"/>
+                        android:text="@string/ATTENDANCE"
+                        android:background="#00b1b7"
+                        android:textColor="#FFFFFF" />
                 </LinearLayout>
             </LinearLayout>
             <LinearLayout
@@ -192,7 +215,9 @@
                         android:id="@+id/b43"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/AboutNPC"/>
+                        android:text="@string/AboutNPC"
+                        android:textColor="#FFFFFF"
+                        android:background="#0a0857" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c44"
@@ -204,7 +229,9 @@
                         android:id="@+id/b44"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/CALL"/>
+                        android:text="@string/CALL"
+                        android:background="#00b1b7"
+                        android:textColor="#FFFFFF" />
                 </LinearLayout>
                 <LinearLayout
                     android:id="@+id/c45"
@@ -216,7 +243,9 @@
                         android:id="@+id/b45"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/FAQ"/>
+                        android:text="@string/FAQ"
+                        android:background="#0a0857"
+                        android:textColor="#FFFFFF" />
                 </LinearLayout>
 
             </LinearLayout>
