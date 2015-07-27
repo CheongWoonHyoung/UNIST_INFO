@@ -1,6 +1,7 @@
 package com.example.owner.myunist_info;
 
 
+import android.content.Intent;
 import android.support.v4.app.FragmentActivity;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -12,8 +13,10 @@ public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        startActivity(new Intent(this, Splash1.class));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         MainPager = (ViewPager)findViewById(R.id.mainpager);
 
