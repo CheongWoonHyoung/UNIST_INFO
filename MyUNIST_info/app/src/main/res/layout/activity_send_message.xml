@@ -3,15 +3,21 @@ xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_paren
 android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".MainActivity"
-android:gravity="center_horizontal">
+android:gravity="center_horizontal"
+    android:background="@drawable/qnabg">
 
 <TextView
-    android:layout_marginTop="20dp"
+    android:layout_marginTop="60dp"
     android:layout_gravity="center"
     android:text="질문보내기"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    />
+    android:textSize="25dp"
+    android:layout_marginBottom="30dp"
+    android:textColor="#000000"
+    android:padding="5dp"
+    android:gravity="center_horizontal"
+    android:textStyle="bold" />
 <LinearLayout
     android:layout_marginRight="25dp"
     android:orientation="vertical"
@@ -22,17 +28,23 @@ android:gravity="center_horizontal">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="이름"/>
+        android:text="이름"
+        android:textColor="#FFFFFF" />
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edt_name"/>
+        android:id="@+id/edt_name"
+        android:visibility="invisible"
+        android:hint="이름을입력하세요"
+        android:text="이름을입력하세요"
+        android:textColor="#FFFFFF" />
 
     <TextView
         android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="메일"/>
+        android:text="메일"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -43,7 +55,8 @@ android:gravity="center_horizontal">
         android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="문의 제목"/>
+        android:text="문의 제목"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:layout_width="fill_parent"
@@ -54,7 +67,8 @@ android:gravity="center_horizontal">
         android:layout_marginTop="25dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="문의 사항"/>
+        android:text="문의 사항"
+        android:textColor="#FFFFFF" />
 
     <EditText
         android:layout_width="fill_parent"
