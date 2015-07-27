@@ -37,45 +37,33 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text ="경영학"
+                    android:text ="환경과학공학"
                     android:textSize="30dp"
                     android:paddingBottom="25dp" />
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text =""
+                    android:text ="지구환경"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn1"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text =""
+                    android:text ="수처리공학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn2"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text =""
+                    android:text ="기후변화공학"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn3"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text =""
+                    android:text ="환경공학개론"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn4"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text =""
-                    android:paddingBottom="25dp"
-                    android:id="@+id/btn5"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text =""
-                    android:paddingBottom="25dp"
-                    android:id="@+id/btn6"/>
 
             </LinearLayout>
 
@@ -88,46 +76,69 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text ="경영학"
+                    android:text ="도시건설공학"
                     android:textSize="30dp"
                     android:paddingBottom="25dp"
                     />
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text =""
-                    android:paddingBottom="25dp"
-                    android:id="@+id/btn1"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text =""
-                    android:paddingBottom="25dp"
-                    android:id="@+id/btn2"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text =""
-                    android:paddingBottom="25dp"
-                    android:id="@+id/btn3"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text =""
-                    android:paddingBottom="25dp"
-                    android:id="@+id/btn4"/>
-                <Button
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text =""
+                    android:text ="도시계획개론"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn5"/>
-                <Button
+                <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text =""
+                    android:text ="건설공학개론"
                     android:paddingBottom="25dp"
                     android:id="@+id/btn6"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text ="지리정보시스템"
+                    android:paddingBottom="25dp"
+                    android:id="@+id/btn7"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text ="재난관리공학"
+                    android:textSize="30dp"
+                    android:paddingBottom="25dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text ="자연재해개론"
+                    android:paddingBottom="25dp"
+                    android:id="@+id/btn8"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text ="재난관리"
+                    android:paddingBottom="25dp"
+                    android:id="@+id/btn9"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text ="재해분석과 시스템의 안정성"
+                    android:paddingBottom="25dp"
+                    android:id="@+id/btn10"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text ="날씨분석 및 예측"
+                    android:paddingBottom="25dp"
+                    android:id="@+id/btn11"/>
             </LinearLayout>
         </LinearLayout>
 
