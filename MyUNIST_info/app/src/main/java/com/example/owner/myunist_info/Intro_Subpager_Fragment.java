@@ -20,6 +20,20 @@ public class Intro_Subpager_Fragment extends Fragment {
     private View intro_View = null;
     private Context intro_context;
 
+    private TextView lec_btn_1;
+    private TextView lec_btn_2;
+    private TextView lec_btn_3;
+    private TextView lec_btn_4;
+    private TextView lec_btn_5;
+    private TextView lec_btn_6;
+    private TextView lec_btn_7;
+    private TextView lec_btn_8;
+    private TextView lec_btn_9;
+    private TextView lec_btn_10;
+    private TextView lec_btn_11;
+    private TextView lec_btn_12;
+
+
     public static Intro_Subpager_Fragment newProduction(int Number_of_page, int id) {
         Intro_Subpager_Fragment mpage = new Intro_Subpager_Fragment();
 
@@ -189,15 +203,97 @@ public class Intro_Subpager_Fragment extends Fragment {
                 }
                 break;
             case 3:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage_dhe, container, false);
+
                 switch(department_id){
                     case 1:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_dhe, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        break;
                     case 2:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_eche, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
+                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
+                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn11);
+                        lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
+
+
+                        break;
                     case 3:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_ece, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        break;
                     case 4:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_ls, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        break;
                     case 5:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_mne, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        break;
                     case 6:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_mse, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
+                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
+                        break;
                     case 7:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_ba, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
+                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
+                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn11);
+                        lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
+                        break;
 
                 }
                 break;

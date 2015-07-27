@@ -19,10 +19,25 @@ public class Intro_Subpager_Fragment2 extends Fragment {
     private int order_of_page;
     private View intro_View = null;
     private Context intro_context;
+    private TextView lec_btn_1;
+    private TextView lec_btn_2;
+    private TextView lec_btn_3;
+    private TextView lec_btn_4;
+    private TextView lec_btn_5;
+    private TextView lec_btn_6;
+    private TextView lec_btn_7;
+    private TextView lec_btn_8;
+    private TextView lec_btn_9;
+    private TextView lec_btn_10;
+    private TextView lec_btn_11;
+    private TextView lec_btn_12;
+    private TextView lec_btn_13;
     public static Intro_Subpager_Fragment2 newProduction(int Number_of_page, int id) {
         Intro_Subpager_Fragment2 mpage = new Intro_Subpager_Fragment2();
         mpage.department_id =  id;
         mpage.order_of_page = Number_of_page;
+
+
 
 
         return mpage;
@@ -116,14 +131,42 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                         track_name3.setText("재난관리공학");
                         content3.setText("다양한 자연 및 인적재난의 원인을 분석하고 도시 사회 및 경제적 영향을 절감하고 효율적 대응 및 복구를 위한 통합적 재난관리 연구 및 교육프로그램을 제공하고 있습니다. \n 지구과학/기후변화, 환경공학, 도시/토목공학의 융복합적 기술을 이용하여 자연재난 예측 및 분석, 인적재난 위험성 분석 및 절감기술, 재난관리 시스템, 도시기반시설의 재난대비 및 복구기술과 같은 피해절감에 기여할 수 있는 연구 및 전문 인력 양성을 추구합니다. \n");
                         break;
-
                 }
                 break;
             case 4:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage_dhe, container, false);
+
                 switch(department_id){
                     case 8:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_sns, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
+                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
+                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn11);
+                        lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
+                        lec_btn_13 = (TextView) intro_View.findViewById(R.id.btn13);
+                        break;
                     case 9:
+                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_uee, container, false);
+                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
+                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
+                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
+                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
+                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
+                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
+                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
+                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
+                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
+                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn11);
+                        lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
+                        break;
 
                 }
                 break;
