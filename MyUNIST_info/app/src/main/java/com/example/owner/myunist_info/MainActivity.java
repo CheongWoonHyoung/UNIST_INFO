@@ -13,7 +13,7 @@ public class MainActivity extends FragmentActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        startActivity(new Intent(this, Splash1.class));
+    //    startActivity(new Intent(this, Splash1.class));
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 

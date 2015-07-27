@@ -52,7 +52,7 @@
         android:layout_weight="12"
         android:orientation="vertical"
         android:background="#FFFFFF"
-        android:id="@+id/">
+        android:id="@+id/topPanel">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
