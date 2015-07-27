@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    tools:context="com.example.owner.myunist_info.Authentication"
-    android:background="@drawable/authent">
+    tools:context="com.example.owner.myunist_info.Authentication">
 
     <LinearLayout
         android:layout_gravity="center"
@@ -18,9 +17,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="학부 부스 코드 입력!"
-            android:textSize="38dp"
-            android:textColor="#FFFFFF"
-            android:background="#00b1b7" />
+            android:textSize="40dp"/>
         <EditText
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -35,6 +32,6 @@
             android:layout_marginTop="50dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="완료!"/>
+            android:text="도전!"/>
     </LinearLayout>
 </LinearLayout>

@@ -24,7 +24,6 @@ public class Introduction_Fragment_pager_adapter2 extends FragmentPagerAdapter {
                 case 2:
                 case 3:
                 case 4:
-                case 5:
                     return Intro_Subpager_Fragment2.newProduction(position, depart_id);
                 default:
                     return null;
@@ -38,6 +37,6 @@ public class Introduction_Fragment_pager_adapter2 extends FragmentPagerAdapter {
     }
 
     @Override
-    public int getCount() { return 6;
+    public int getCount() { return 5;
     }
 }
