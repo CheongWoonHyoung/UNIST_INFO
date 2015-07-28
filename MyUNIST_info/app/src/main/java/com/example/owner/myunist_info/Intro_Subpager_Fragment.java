@@ -1,7 +1,5 @@
 package com.example.owner.myunist_info;
 
-import android.content.DialogInterface;
-import android.content.Intent;
 import android.support.v4.app.Fragment;
 import android.content.Context;
 import android.os.Bundle;
@@ -238,7 +236,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
                         lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
                         lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
-                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn11);
+                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn12);
                         lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
 
                         lec_btn_1.setOnClickListener(new Go_to_lec_page(9, intro_context));
@@ -350,7 +348,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
                         lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
                         lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
-                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn11);
+                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn12);
                         lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
 
                         lec_btn_1.setOnClickListener(new Go_to_lec_page(55, intro_context));

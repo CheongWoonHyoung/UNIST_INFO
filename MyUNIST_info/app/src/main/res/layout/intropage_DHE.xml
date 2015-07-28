@@ -14,260 +14,260 @@
         android:layout_alignParentTop="true"
         android:layout_marginTop="0dp">
 
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#FFFFFF"
+            android:id="@+id/backside">
+
+            <ImageView
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:id="@+id/ba_icon"
+                android:background="@drawable/ba"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="70dp"
+                android:backgroundTint="#FFFFFF"
+                android:elevation="10dp"
+                android:contentDescription="ba" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="120dp"
+                android:layout_marginBottom="30dp"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:id="@+id/relativeLayout">
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/relativeLayout"
+                android:id="@+id/Upper"
+                android:layout_alignParentEnd="false">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text ="산업디자인"
+                    android:textSize="25dp"
+                    android:background="#00b1b7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/textView3"
+                    android:elevation="10dp" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="디자인적 사고"
+                    android:id="@+id/btn1"
+                    android:layout_below="@+id/textView3"
+                    android:layout_marginTop="15dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="30dp"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:padding="10dp"
+                    android:textAlignment="center" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="디자인 요소와 원리"
+                    android:id="@+id/btn2"
+                    android:textColor="#FFFFFF"
+                    android:elevation="10dp"
+                    android:background="#0a0857"
+                    android:layout_alignTop="@+id/btn1"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="제품디자인"
+                    android:id="@+id/btn3"
+                    android:textColor="#FFFFFF"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:padding="10dp"
+                    android:layout_alignTop="@+id/btn2"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginEnd="30dp" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="창의디자인"
+                    android:id="@+id/btn4"
+                    android:layout_below="@+id/btn3"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="15dp"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:padding="10dp" />
+                TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="생산관리"
+                    android:id="@+id/btn5"
+                    android:textColor="#FFFFFF"
+                    android:layout_alignTop="@+id/btn4"
+                    android:layout_alignLeft="@+id/btn2"
+                    android:layout_alignStart="@+id/btn2"
+                    android:padding="10dp"
+                    android:background="#0a0857"
+                    android:elevation="10dp" />
+                TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="경영전략"
+                    android:id="@+id/btn6"
+                    android:textColor="#FFFFFF"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:layout_alignTop="@+id/btn5"
+                    android:layout_alignLeft="@+id/btn3"
+                    android:layout_alignStart="@+id/btn3"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@+id/Upper"
+                android:id="@+id/Lower">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text ="인간 및 시스템 공학"
+                    android:textSize="25dp"
+                    android:background="#00b1b7"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="0dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:padding="5dp"
+                    android:textColor="#FFFFFF"
+                    android:id="@+id/textView4"
+                    android:elevation="10dp" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="인지 및 심리 인간공학"
+                    android:id="@+id/btn5"
+                    android:layout_below="@+id/textView4"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="인체 인간공학"
+                    android:id="@+id/btn6"
+                    android:textColor="#FFFFFF"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:layout_alignTop="@+id/btn5"
+                    android:layout_centerHorizontal="true"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="생산시스템설계 및 시뮬레이션"
+                    android:id="@+id/btn7"
+                    android:layout_marginLeft="43dp"
+                    android:textColor="#FFFFFF"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:layout_alignTop="@+id/btn6"
+                    android:layout_toRightOf="@+id/btn6"
+                    android:layout_toEndOf="@+id/btn6"
+                    android:layout_marginStart="43dp"
+                    android:elegantTextHeight="false"
+                    android:padding="10dp" />
+                <TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="공학디자인 기법"
+                    android:id="@+id/btn8"
+                    android:layout_below="@+id/btn5"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="30dp"
+                    android:textColor="#FFFFFF"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="100dp" />
+                TextView
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:text ="미시경제학"
+                    android:id="@+id/btn11"
+                    android:textColor="#FFFFFF"
+                    android:background="#0a0857"
+                    android:elevation="10dp"
+                    android:layout_alignTop="@+id/btn10"
+                    android:layout_alignLeft="@+id/btn8"
+                    android:layout_alignStart="@+id/btn8"
+                    android:padding="10dp" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:text="주요 개설 교과목"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"
+                android:layout_alignTop="@+id/ba_icon"
+                android:layout_toRightOf="@+id/ba_icon"
+                android:layout_toEndOf="@+id/ba_icon"
+                android:layout_marginLeft="20dp"
+                android:background="#0a0857"
+                android:elevation="10dp"
+                android:textAlignment="center"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/imageView2"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/curribg2"
+                android:adjustViewBounds="false"
+                android:layout_above="@+id/Upper" />
+        </RelativeLayout>
     </ScrollView>
-
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="#FFFFFF"
-        android:id="@+id/backside">
-
-        <ImageView
-            android:layout_width="45dp"
-            android:layout_height="45dp"
-            android:id="@+id/ba_icon"
-            android:background="@drawable/ba"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="40dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="70dp"
-            android:backgroundTint="#FFFFFF"
-            android:elevation="10dp"
-            android:contentDescription="ba" />
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="30dp"
-            android:layout_marginTop="120dp"
-            android:layout_marginBottom="30dp"
-            android:orientation="vertical"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:id="@+id/relativeLayout">
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:orientation="vertical"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_below="@+id/relativeLayout"
-            android:id="@+id/Upper"
-            android:layout_alignParentEnd="false">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text ="산업디자인"
-                android:textSize="25dp"
-                android:background="#00b1b7"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="0dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:padding="5dp"
-                android:textColor="#FFFFFF"
-                android:id="@+id/textView3"
-                android:elevation="10dp" />
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="디자인적 사고"
-                android:id="@+id/btn1"
-                android:layout_below="@+id/textView3"
-                android:layout_marginTop="15dp"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="30dp"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:padding="10dp"
-                android:textAlignment="center" />
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="디자인 요소와 원리"
-                android:id="@+id/btn2"
-                android:textColor="#FFFFFF"
-                android:elevation="10dp"
-                android:background="#0a0857"
-                android:layout_alignTop="@+id/btn1"
-                android:layout_centerHorizontal="true"
-                android:padding="10dp" />
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="제품디자인"
-                android:id="@+id/btn3"
-                android:textColor="#FFFFFF"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:padding="10dp"
-                android:layout_alignTop="@+id/btn2"
-                android:layout_alignParentRight="true"
-                android:layout_alignParentEnd="true"
-                android:layout_marginRight="30dp"
-                android:layout_marginEnd="30dp" />
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="창의디자인"
-                android:id="@+id/btn4"
-                android:layout_below="@+id/btn3"
-                android:layout_marginLeft="30dp"
-                android:textColor="#FFFFFF"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="15dp"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:padding="10dp" />
-            TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="생산관리"
-                android:id="@+id/btn5"
-                android:textColor="#FFFFFF"
-                android:layout_alignTop="@+id/btn4"
-                android:layout_alignLeft="@+id/btn2"
-                android:layout_alignStart="@+id/btn2"
-                android:padding="10dp"
-                android:background="#0a0857"
-                android:elevation="10dp" />
-            TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="경영전략"
-                android:id="@+id/btn6"
-                android:textColor="#FFFFFF"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:layout_alignTop="@+id/btn5"
-                android:layout_alignLeft="@+id/btn3"
-                android:layout_alignStart="@+id/btn3"
-                android:padding="10dp" />
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentBottom="true"
-            android:layout_below="@+id/Upper"
-            android:id="@+id/Lower">
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text ="인간 및 시스템 공학"
-                android:textSize="25dp"
-                android:background="#00b1b7"
-                android:layout_alignParentLeft="true"
-                android:layout_marginLeft="0dp"
-                android:layout_alignParentTop="true"
-                android:layout_marginTop="0dp"
-                android:padding="5dp"
-                android:textColor="#FFFFFF"
-                android:id="@+id/textView4"
-                android:elevation="10dp" />
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="인지 및 심리 인간공학"
-                android:id="@+id/btn5"
-                android:layout_below="@+id/textView4"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginTop="15dp"
-                android:layout_marginLeft="30dp"
-                android:textColor="#FFFFFF"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:padding="10dp" />
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="인체 인간공학"
-                android:id="@+id/btn6"
-                android:textColor="#FFFFFF"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:layout_alignTop="@+id/btn5"
-                android:layout_centerHorizontal="true"
-                android:padding="10dp" />
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="생산시스템설계 및 시뮬레이션"
-                android:id="@+id/btn7"
-                android:layout_marginLeft="43dp"
-                android:textColor="#FFFFFF"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:layout_alignTop="@+id/btn6"
-                android:layout_toRightOf="@+id/btn6"
-                android:layout_toEndOf="@+id/btn6"
-                android:layout_marginStart="43dp"
-                android:elegantTextHeight="false"
-                android:padding="10dp" />
-            <TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="공학디자인 기법"
-                android:id="@+id/btn8"
-                android:layout_below="@+id/btn5"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentStart="true"
-                android:layout_marginLeft="30dp"
-                android:textColor="#FFFFFF"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:padding="10dp"
-                android:layout_marginTop="15dp" />
-            TextView
-                android:layout_width="70dp"
-                android:layout_height="70dp"
-                android:text ="미시경제학"
-                android:id="@+id/btn11"
-                android:textColor="#FFFFFF"
-                android:background="#0a0857"
-                android:elevation="10dp"
-                android:layout_alignTop="@+id/btn10"
-                android:layout_alignLeft="@+id/btn8"
-                android:layout_alignStart="@+id/btn8"
-                android:padding="10dp" />
-
-        </RelativeLayout>
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:text="주요 개설 교과목"
-            android:textSize="30dp"
-            android:textColor="#FFFFFF"
-            android:layout_alignTop="@+id/ba_icon"
-            android:layout_toRightOf="@+id/ba_icon"
-            android:layout_toEndOf="@+id/ba_icon"
-            android:layout_marginLeft="20dp"
-            android:background="#0a0857"
-            android:elevation="10dp"
-            android:textAlignment="center"
-            android:paddingLeft="15dp"
-            android:paddingTop="5dp" />
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/imageView2"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:background="@drawable/curribg2"
-            android:adjustViewBounds="false"
-            android:layout_above="@+id/Upper" />
-    </RelativeLayout>
 
 </RelativeLayout>
