@@ -25,7 +25,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:id="@+id/ba_icon"
-                android:background="@drawable/ba"
+                android:background="@drawable/dhe"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="40dp"
                 android:layout_alignParentTop="true"
@@ -79,7 +79,7 @@
                     android:layout_marginTop="15dp"
                     android:textColor="#FFFFFF"
                     android:layout_marginLeft="30dp"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp"
                     android:textAlignment="center" />
@@ -90,7 +90,7 @@
                     android:id="@+id/btn2"
                     android:textColor="#FFFFFF"
                     android:elevation="10dp"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:layout_alignTop="@+id/btn1"
                     android:layout_centerHorizontal="true"
                     android:padding="10dp" />
@@ -100,7 +100,7 @@
                     android:text ="제품디자인"
                     android:id="@+id/btn3"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp"
                     android:layout_alignTop="@+id/btn2"
@@ -119,7 +119,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="15dp"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp" />
                 TextView
@@ -132,7 +132,7 @@
                     android:layout_alignLeft="@+id/btn2"
                     android:layout_alignStart="@+id/btn2"
                     android:padding="10dp"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp" />
                 TextView
                     android:layout_width="70dp"
@@ -140,7 +140,7 @@
                     android:text ="경영전략"
                     android:id="@+id/btn6"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:layout_alignTop="@+id/btn5"
                     android:layout_alignLeft="@+id/btn3"
@@ -182,7 +182,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginLeft="30dp"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp" />
                 <TextView
@@ -191,7 +191,7 @@
                     android:text ="인체 인간공학"
                     android:id="@+id/btn6"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:layout_alignTop="@+id/btn5"
                     android:layout_centerHorizontal="true"
@@ -201,16 +201,15 @@
                     android:layout_height="70dp"
                     android:text ="생산시스템설계 및 시뮬레이션"
                     android:id="@+id/btn7"
-                    android:layout_marginLeft="43dp"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:layout_alignTop="@+id/btn6"
-                    android:layout_toRightOf="@+id/btn6"
-                    android:layout_toEndOf="@+id/btn6"
                     android:layout_marginStart="43dp"
                     android:elegantTextHeight="false"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:layout_marginRight="30dp"
+                    android:layout_alignParentEnd="true" />
                 <TextView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
@@ -221,7 +220,7 @@
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="30dp"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp"
                     android:layout_marginTop="15dp"

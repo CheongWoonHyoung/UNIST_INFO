@@ -4,7 +4,8 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".MainActivity"
 android:gravity="center_horizontal"
-    android:background="@drawable/qnabg">
+    android:background="@drawable/qnabg"
+    android:outlineProvider="background">
 
 <TextView
     android:layout_marginTop="60dp"
@@ -35,9 +36,11 @@ android:gravity="center_horizontal"
         android:layout_height="wrap_content"
         android:id="@+id/edt_name"
         android:visibility="visible"
-        android:hint="이름을입력하세요"
-        android:text="이름을입력하세요"
-        android:textColor="#FFFFFF" />
+        android:hint="홍길동"
+        android:textColor="#000000"
+        android:elevation="10dp"
+        android:outlineProvider="paddedBounds"
+        android:padding="10dp" />
 
     <TextView
         android:layout_marginTop="25dp"
@@ -49,7 +52,12 @@ android:gravity="center_horizontal"
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edt_mail"/>
+        android:id="@+id/edt_mail"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:outlineProvider="background"
+        android:elevation="10dp"
+        android:hint="question@unist.ac.kr" />
 
     <TextView
         android:layout_marginTop="25dp"
@@ -61,7 +69,9 @@ android:gravity="center_horizontal"
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/edt_title"/>
+        android:id="@+id/edt_title"
+        android:hint="OOO에 대해 문의드립니다"
+        android:textColor="#000000" />
 
     <TextView
         android:layout_marginTop="25dp"
@@ -73,7 +83,9 @@ android:gravity="center_horizontal"
     <EditText
         android:layout_width="fill_parent"
         android:layout_height="100dp"
-        android:id="@+id/edt_content" />
+        android:id="@+id/edt_content"
+        android:textColor="#000000"
+        android:hint="문의사항을 자세히 적어주세요" />
 
     <Button
         android:layout_marginTop="20dp"

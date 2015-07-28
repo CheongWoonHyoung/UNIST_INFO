@@ -234,9 +234,9 @@ public class Intro_Subpager_Fragment extends Fragment{
                         lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
                         lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
                         lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
-                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
-                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn12);
+                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn8);
+                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn9);
+                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn10);
                         lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
 
                         lec_btn_1.setOnClickListener(new Go_to_lec_page(9, intro_context));
@@ -322,8 +322,8 @@ public class Intro_Subpager_Fragment extends Fragment{
                         lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
                         lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
                         lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
-                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
+                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn8);
+                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn9);
 
                         lec_btn_1.setOnClickListener(new Go_to_lec_page(45, intro_context));
                         lec_btn_2.setOnClickListener(new Go_to_lec_page(46, intro_context));
@@ -346,8 +346,8 @@ public class Intro_Subpager_Fragment extends Fragment{
                         lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
                         lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
                         lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn9);
-                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn10);
+                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn8);
+                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn9);
                         lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn12);
                         lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
 

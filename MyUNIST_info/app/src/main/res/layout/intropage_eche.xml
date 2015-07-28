@@ -28,7 +28,7 @@
                 android:layout_width="45dp"
                 android:layout_height="45dp"
                 android:id="@+id/ba_icon"
-                android:background="@drawable/ba"
+                android:background="@drawable/eche"
                 android:layout_alignParentLeft="true"
                 android:layout_marginLeft="40dp"
                 android:layout_alignParentTop="true"
@@ -81,7 +81,7 @@
                     android:layout_marginTop="15dp"
                     android:textColor="#FFFFFF"
                     android:layout_marginLeft="30dp"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp"
                     android:textAlignment="center" />
@@ -92,7 +92,7 @@
                     android:id="@+id/btn2"
                     android:textColor="#FFFFFF"
                     android:elevation="10dp"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:layout_alignTop="@+id/btn1"
                     android:layout_centerHorizontal="true"
                     android:padding="10dp" />
@@ -102,7 +102,7 @@
                     android:text ="고체화학"
                     android:id="@+id/btn3"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp"
                     android:layout_alignTop="@+id/btn2"
@@ -121,7 +121,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginTop="15dp"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp" />
                 <TextView
@@ -134,7 +134,7 @@
                     android:layout_alignLeft="@+id/btn2"
                     android:layout_alignStart="@+id/btn2"
                     android:padding="10dp"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp" />
                 <TextView
                     android:layout_width="70dp"
@@ -142,7 +142,7 @@
                     android:text ="태양전지실험"
                     android:id="@+id/btn6"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:layout_alignTop="@+id/btn5"
                     android:layout_alignLeft="@+id/btn3"
@@ -157,7 +157,8 @@
                 android:orientation="vertical"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentBottom="true"
-                android:layout_below="@+id/Upper">
+                android:layout_below="@+id/Upper"
+                android:id="@+id/Lower">
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -183,7 +184,7 @@
                     android:layout_marginTop="15dp"
                     android:layout_marginLeft="30dp"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp" />
                 <TextView
@@ -192,7 +193,7 @@
                     android:text ="물리화학"
                     android:id="@+id/btn8"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:layout_alignTop="@+id/btn7"
                     android:layout_centerHorizontal="true"
@@ -202,27 +203,26 @@
                     android:layout_height="70dp"
                     android:text ="전달현상"
                     android:id="@+id/btn9"
-                    android:layout_marginLeft="43dp"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
-                    android:layout_alignTop="@+id/btn8"
-                    android:layout_toRightOf="@+id/btn8"
-                    android:layout_toEndOf="@+id/btn8"
+                    android:layout_alignTop="@+id/btn7"
                     android:layout_marginStart="43dp"
                     android:elegantTextHeight="false"
-                    android:padding="10dp" />
+                    android:padding="10dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginRight="30dp" />
                 <TextView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:text ="화학공정개론"
                     android:id="@+id/btn10"
-                    android:layout_below="@+id/btn9"
+                    android:layout_below="@+id/btn8"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentStart="true"
                     android:layout_marginLeft="30dp"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
                     android:padding="10dp"
                     android:layout_marginTop="15dp"
@@ -233,12 +233,12 @@
                     android:text ="화공열역학"
                     android:id="@+id/btn12"
                     android:textColor="#FFFFFF"
-                    android:background="#0a0857"
+                    android:background="#FDB933"
                     android:elevation="10dp"
+                    android:padding="10dp"
                     android:layout_alignTop="@+id/btn10"
                     android:layout_alignLeft="@+id/btn8"
-                    android:layout_alignStart="@+id/btn8"
-                    android:padding="10dp" />
+                    android:layout_alignParentEnd="false" />
                 TextView
                     android:layout_width="70dp"
                     android:layout_height="70dp"
