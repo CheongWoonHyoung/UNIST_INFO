@@ -4,21 +4,28 @@ android:layout_height="match_parent"
 android:orientation="vertical"
 tools:context=".MainActivity"
 android:gravity="center_horizontal"
-    android:background="@drawable/qnabg"
+    android:background="#3F51B5"
     android:outlineProvider="background">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="질문"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
 
-<TextView
-    android:layout_marginTop="60dp"
-    android:layout_gravity="center"
-    android:text="질문보내기"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:textSize="25dp"
-    android:layout_marginBottom="30dp"
-    android:textColor="#000000"
-    android:padding="5dp"
-    android:gravity="center_horizontal"
-    android:textStyle="bold" />
+
+    </LinearLayout>
+
+
 <LinearLayout
     android:layout_marginRight="25dp"
     android:orientation="vertical"

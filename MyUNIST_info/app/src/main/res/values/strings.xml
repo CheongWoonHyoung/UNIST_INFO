@@ -35,5 +35,10 @@
     <string name="title_activity_attendance" />
     <string name="title_activity_splash1">Splash1</string>
     <string name="title_activity_splash2">Splash2</string>
-
+    <string name="title_subject">개설교과목조회</string>
+    <string name="sample_subject">신소재공학부</string>
+    <string name="sample_subtitle">재료공학개론</string>
+    <string name="sample_code">동해물과 백두산이 마르고 닳도록 하느님이 보우하사 우리나라 만세 무궁화 삼천리 화려강산 대한사람 대한으로 길이 보전하세</string>
+    <string name="sample_school">학부소개</string>
+    <string name="sample_track">학과소개</string>
 </resources>
