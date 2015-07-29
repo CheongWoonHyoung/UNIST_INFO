@@ -4,10 +4,54 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/attendbg"
+    android:background="#3F51B5"
     tools:context="com.example.owner.myunist_info.Authentication"
     android:id="@+id/attendance"
     android:gravity="bottom">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_horizontal">
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/ic_quote_left">
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="이벤트 출석체크"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"/>
+            <LinearLayout
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/ic_quote_right">
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"
+            android:paddingTop="5dp"
+            android:text="도장을 찍어오시면 경품권에 응모하실 수 있습니다."/>
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_gravity="center"
@@ -24,12 +68,19 @@
                 android:layout_height="70dp"
                 android:background="@drawable/ba"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_ba"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_ba"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
+
 
 
         </RelativeLayout>
@@ -45,13 +96,19 @@
                 android:layout_height="70dp"
                 android:background="@drawable/chem"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_chem"
-                android:layout_marginLeft="20dp"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_chem"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
         </RelativeLayout>
 
@@ -65,20 +122,26 @@
                 android:layout_height="70dp"
                 android:background="@drawable/cse"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_cse"
-                android:layout_marginLeft="20dp"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_cse"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
         </RelativeLayout>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -93,12 +156,18 @@
                 android:layout_height="70dp"
                 android:background="@drawable/ece"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_ece"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_ece"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
         </RelativeLayout>
 
         <RelativeLayout
@@ -111,13 +180,19 @@
                 android:layout_height="70dp"
                 android:background="@drawable/ee"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_ee"
-                android:layout_marginLeft="20dp"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_ee"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
         </RelativeLayout>
         <RelativeLayout
@@ -131,20 +206,26 @@
                 android:layout_height="70dp"
                 android:background="@drawable/mse"
                 android:elevation="9dp" />
-            <Button
-                android:layout_marginLeft="20dp"
-                android:id="@+id/unchecked_mse"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_mse"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
         </RelativeLayout>
 
     </LinearLayout>
     <LinearLayout
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -158,12 +239,18 @@
                 android:background="@drawable/mne"
                 android:elegantTextHeight="false"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_mne"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_mne"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
         </RelativeLayout>
         <RelativeLayout
@@ -176,13 +263,19 @@
                 android:layout_height="70dp"
                 android:background="@drawable/mth"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_mth"
-                android:layout_marginLeft="20dp"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_mth"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
         </RelativeLayout>
 
@@ -196,20 +289,26 @@
                 android:layout_height="70dp"
                 android:background="@drawable/phy"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_phy"
-                android:layout_marginLeft="20dp"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_phy"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
         </RelativeLayout>
 
     </LinearLayout>
     <LinearLayout
         android:layout_gravity="center"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
@@ -222,12 +321,18 @@
                 android:layout_height="70dp"
                 android:background="@drawable/uee"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_uee"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_uee"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
 
 
@@ -243,13 +348,19 @@
                 android:layout_height="70dp"
                 android:background="@drawable/dhe"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_dhe"
-                android:layout_marginLeft="20dp"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_dhe"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
         </RelativeLayout>
 
@@ -263,28 +374,38 @@
                 android:layout_height="70dp"
                 android:background="@drawable/ls"
                 android:elevation="9dp" />
-            <Button
-                android:id="@+id/unchecked_ls"
-                android:layout_marginLeft="20dp"
+            <LinearLayout
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/unchecked"
-                android:elevation="10dp" />
+                android:elevation="5dp"
+                android:layout_marginLeft="20dp"
+                android:background="#1A237E">
+                <Button
+                    android:id="@+id/unchecked_ls"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/ic_https_white_24dp"
+                    android:elevation="10dp" />
+            </LinearLayout>
 
         </RelativeLayout>
 
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#009688"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="응모하기"
+            android:textSize="15dp"
+            android:textColor="#FFFFFF"
+            android:gravity="center" />
 
-    <Button
-        android:id="@+id/btn_clear"
-        android:layout_marginTop="30dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_width="250dp"
-        android:layout_height="40dp"
-        android:text="CLEAR"
-        android:background="#00b1b7"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginBottom="50dp"
-        android:elevation="10dp" />
+    </LinearLayout>
+
 </LinearLayout>

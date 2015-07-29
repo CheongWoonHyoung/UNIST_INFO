@@ -3,22 +3,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context="com.example.owner.myunist_info.Authentication"
-    android:background="@drawable/authent">
+    android:background="#3F51B5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </LinearLayout>
 
     <LinearLayout
-        android:layout_gravity="center"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_weight="1">
         <TextView
             android:layout_marginTop="30dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="학부 부스 코드 입력!"
-            android:textSize="40dp"/>
+            android:textColor="#FFFFFF"
+            android:text="코드를 입력해주세요."
+            android:textSize="25dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:paddingTop="10dp"
+            android:textColor="#BDBDBD"
+            android:text="부스담당자부터 코드를 받으세요. 출석체크 인정이 됩니다."/>
         <EditText
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
@@ -26,13 +40,27 @@
             android:id="@+id/edt_check"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/btn_check"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_marginTop="50dp"
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_weight="1">
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="확인!"/>
+            android:layout_height="50dp"
+            android:background="#009688"
+            android:layout_gravity="bottom"
+            android:id="@+id/btn_check">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textColor="#FFFFFF"
+                android:textSize="15dp"
+                android:text="확인"/>
+
+        </LinearLayout>
+
     </LinearLayout>
 </LinearLayout>
