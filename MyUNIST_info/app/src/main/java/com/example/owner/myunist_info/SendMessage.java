@@ -10,6 +10,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.BufferedReader;
@@ -25,7 +26,7 @@ public class SendMessage extends Activity {
     EditText edt_mail;
     EditText edt_title;
     EditText edt_content;
-    Button btn_send;
+    TextView btn_send;
     String name;
     String mail;
     String title;
@@ -34,13 +35,13 @@ public class SendMessage extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_send_message);
+        setContentView(R.layout.new_send_message);
 
-        edt_name = (EditText) findViewById(R.id.edt_name);
-        edt_mail = (EditText) findViewById(R.id.edt_mail);
-        edt_title = (EditText) findViewById(R.id.edt_title);
-        edt_content = (EditText) findViewById(R.id.edt_content);
-        btn_send = (Button) findViewById(R.id.btn_send);
+        edt_name = (EditText) findViewById(R.id.new_name);
+        edt_mail = (EditText) findViewById(R.id.new_email);
+        edt_title = (EditText) findViewById(R.id.new_title);
+        edt_content = (EditText) findViewById(R.id.new_contents);
+        btn_send = (TextView) findViewById(R.id.new_send);
 
 
         btn_send.setOnClickListener(new View.OnClickListener() {

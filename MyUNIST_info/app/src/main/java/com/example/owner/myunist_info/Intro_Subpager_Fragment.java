@@ -6,8 +6,12 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
+
+import java.util.ArrayList;
 
 import static android.view.LayoutInflater.from;
 
@@ -56,9 +60,9 @@ public class Intro_Subpager_Fragment extends Fragment{
 
         switch(order_of_page){
             case 0:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage1, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.new_intropage, container, false);
                 TextView depart_name_ko = (TextView) intro_View.findViewById(R.id.depart_name_ko);
-                TextView depart_name_eng = (TextView) intro_View.findViewById(R.id.depat_name_eng);
+                TextView depart_name_eng = (TextView) intro_View.findViewById(R.id.depart_name_eng);
                 TextView title = (TextView) intro_View.findViewById(R.id.title);
                 TextView contents = (TextView) intro_View.findViewById(R.id.contents);
                 switch(department_id){
@@ -69,7 +73,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         contents.setText("  디자인 및 인간공학부는 인간중심 제품 및 시스템의 기획, 설계, 제조, 상업하의 전 과정에 필요한 기본 및 응용기술을 연구하고 있습니다.   \n \n  산업 디자인 트랙과 인간 및 시스템공학 트랙으로 구성되어 있으며, ‘혁신적인 Engineering Design 인재 양성과 연구를 통해 인류 삶의 질 향상에 기여’라는 비전을 이루기 위하여 노력하고 있습니다.");
                         break;
                     case 2:
-                        depart_name_ko.setText("에너지 및 화학공학부");
+                       depart_name_ko.setText("에너지 및 화학공학부");
                         depart_name_eng.setText("Energy and Chemical Engineering");
                         title.setText(R.string.ECHE_txt_0);
                         contents.setText("  에너지 및 화학공학부에서는 화학공학을 근간으로 에너지 변환 및 저장에 관련된 응용 학문에 필요한 첨단 융합 교육을 제공하며, 학생들은 촉매, 나노소재 및 소자, 정밀화학, 고분자, 응용분자화학 및 이차전지, 연료전지, 태양전지 등 에너지 관련 학문들에 대한 기본적인 이해와 실제적인 응용분야를 배우게 됩니다.   \n \n  이를 통해 학생들은 에너지 및 화학공학 분야에 있어 국제적이며 실용적인 감각을 익히고, 창의적이고 도전적인 자세를 가진 공학자로 거듭나게 될 것입니다.");
@@ -110,7 +114,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                 }
                 break;
             case 1:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage2, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.new_intropage_2, container, false);
                 TextView intro_track = (TextView) intro_View.findViewById(R.id.intro_track);
                 TextView track_name = (TextView) intro_View.findViewById(R.id.name_track);
                 TextView content = (TextView) intro_View.findViewById(R.id.contents);
@@ -157,14 +161,14 @@ public class Intro_Subpager_Fragment extends Fragment{
                 }
                 break;
             case 2:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage2, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.new_intropage_2, container, false);
                 TextView intro_track2 = (TextView) intro_View.findViewById(R.id.intro_track);
                 TextView track_name2 = (TextView) intro_View.findViewById(R.id.name_track);
                 TextView content2 = (TextView) intro_View.findViewById(R.id.contents);
                 switch(department_id){
                     case 1:
                         intro_track2.setText("트랙 소개");
-                        track_name2.setText("인간 및 시스템공학");
+                        track_name2.setText("인간및시스템공학");
                         content2.setText("  인간 및 시스템공학 트랙에서는, 인간중심 공학설계 (human-centered engineering design) 분야의 인재를 양성하기 위해, 인간공학 (human factors and ergonomics)과 시스템공학 (systems engineering)의 융합교육을 하고 있습니다.   \n \n   이를 위해, 학부과정에서는 인간의 신체적 및 인지적 특성에 대한 이해를 바탕으로 최적의 제품, 프로세스 및 시스템을 설계하기 위한 기본 지식과 응용방법을 배웁니다.   \n \n  ");
                         break;
                     case 2:
@@ -203,170 +207,108 @@ public class Intro_Subpager_Fragment extends Fragment{
                 }
                 break;
             case 3:
+                intro_View = (View) from(intro_context).inflate(R.layout.new_listview, container, false);
+                TextView department = (TextView) intro_View.findViewById(R.id.department);
+                ListView sub_list = (ListView) intro_View.findViewById(R.id.sub_list);
+                ArrayList<SubjectListItem> item = new ArrayList<>();
+                SubjectListAdapter adapter = new SubjectListAdapter(intro_context,R.id.sub_list,item);
                 switch(department_id){
                     case 1:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_dhe, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(1, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(2, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(3, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(4, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(5, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(6, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(7, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(8, intro_context));
+                        department.setText("디자인 및 인간공학부");
+                        item.add(new SubjectListItem("디자인적 사고",getString(R.string.dhe_1),"산업디자인"));
+                        item.add(new SubjectListItem("디자인 요소와 원리",getString(R.string.dhe_2),"산업디자인"));
+                        item.add(new SubjectListItem("제품디자인",getString(R.string.dhe_3),"산업디자인"));
+                        item.add(new SubjectListItem("창의디자인",getString(R.string.dhe_4),"산업디자"));
+                        item.add(new SubjectListItem("인지 및 심리 인간공학",getString(R.string.dhe_5),"인간및시스템 공학"));
+                        item.add(new SubjectListItem("인체 인간공학",getString(R.string.dhe_6),"인간및시스템공학"));
+                        item.add(new SubjectListItem("생산시스템설계 및 시뮬레이션",getString(R.string.dhe_7),"인간및시스템공학"));
+                        item.add(new SubjectListItem("공학디자인 기법",getString(R.string.dhe_8),"인간및시스템공학"));
+                        sub_list.setAdapter(adapter);
                         break;
                     case 2:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_eche, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn9);
-                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn10);
-                        lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
-
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(9, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(10, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(11, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(12, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(13, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(14, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(15, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(16, intro_context));
-                        lec_btn_9.setOnClickListener(new Go_to_lec_page(17, intro_context));
-                        lec_btn_10.setOnClickListener(new Go_to_lec_page(18, intro_context));
-                        lec_btn_11.setOnClickListener(new Go_to_lec_page(19, intro_context));
-                        lec_btn_12.setOnClickListener(new Go_to_lec_page(20, intro_context));
+                        department.setText("에너지 및 화공학부");
+                        item.add(new SubjectListItem("학무기화학",getString(R.string.eche_1),"에너지 공학"));
+                        item.add(new SubjectListItem("전기화학",getString(R.string.eche_2),"에너지 공학"));
+                        item.add(new SubjectListItem("고체화학",getString(R.string.eche_3),"에너지 공학"));
+                        item.add(new SubjectListItem("에너지 변환 및 저장실",getString(R.string.eche_4),"에너지 공학"));
+                        item.add(new SubjectListItem("고분자재료과학",getString(R.string.eche_5),"에너지 공학"));
+                        item.add(new SubjectListItem("태양전지실험",getString(R.string.eche_7),"에너지 공학"));
+                        item.add(new SubjectListItem("유기화학",getString(R.string.eche_8),"화학 공학"));
+                        item.add(new SubjectListItem("물리화학",getString(R.string.eche_9),"화학 공학"));
+                        item.add(new SubjectListItem("전달현상",getString(R.string.eche_10),"화학 공학"));
+                        item.add(new SubjectListItem("화학공정개론",getString(R.string.eche_11),"화학 공학"));
+                        item.add(new SubjectListItem("화공열역학",getString(R.string.eche_12),"화학 공학"));
+                        sub_list.setAdapter(adapter);
                         break;
                     case 3:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_ece, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(21, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(22, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(23, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(24, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(25, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(26, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(27, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(28, intro_context));
+                        department.setText("전기전자컴퓨터공학부");
+                        item.add(new SubjectListItem("전자회로",getString(R.string.ece_1),"전기전자공학"));
+                        item.add(new SubjectListItem("전자소자개론",getString(R.string.ece_2),"전기전자공학"));
+                        item.add(new SubjectListItem("신호및시스템",getString(R.string.ece_3),"전기전자공학"));
+                        item.add(new SubjectListItem("디지털신호처리",getString(R.string.ece_4),"전기전자공학"));
+                        item.add(new SubjectListItem("운영체제",getString(R.string.ece_5),"컴퓨터공학"));
+                        item.add(new SubjectListItem("알고리즘",getString(R.string.ece_6),"컴퓨터공학"));
+                        item.add(new SubjectListItem("컴퓨터 그래픽스",getString(R.string.ece_7),"컴퓨터공학"));
+                        item.add(new SubjectListItem("컴퓨터 네트워크",getString(R.string.ece_8),"컴퓨터공학"));
+                        sub_list.setAdapter(adapter);
                         break;
                     case 4:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_ls, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(29, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(30, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(31, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(32, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(33, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(34, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(35, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(36, intro_context));
+                        department.setText("생명과학부");
+                        item.add(new SubjectListItem("생명공학개론","","생명공학"));
+                        item.add(new SubjectListItem("바이오기기분석","","생명공학"));
+                        item.add(new SubjectListItem("생체유기역학","","생명공학"));
+                        item.add(new SubjectListItem("바이오재료 및 조직공학","","생명공학"));
+                        item.add(new SubjectListItem("생화학","","생명과학"));
+                        item.add(new SubjectListItem("발생학","","생명과학"));
+                        item.add(new SubjectListItem("세포생물학","","생명과학"));
+                        item.add(new SubjectListItem("해부 및 생리학","","생명과학"));
+                        sub_list.setAdapter(adapter);
                         break;
                     case 5:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_mne, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
+                        department.setText("기계 및 원자공학부");
+                        item.add(new SubjectListItem("열역학",getString(R.string.mne_1),"기계공학"));
+                        item.add(new SubjectListItem("유체역학",getString(R.string.mne_2),"기계공학"));
+                        item.add(new SubjectListItem("고체역학",getString(R.string.mne_3),"기계공학"));
+                        item.add(new SubjectListItem("열전달",getString(R.string.mne_4),"기계공학"));
+                        item.add(new SubjectListItem("기계요소설계",getString(R.string.mne_5),"기계공학"));
+                        item.add(new SubjectListItem("원자력공학개론",getString(R.string.mne_6),"원자력공학"));
+                        item.add(new SubjectListItem("원자력방사선공학및실험",getString(R.string.mne_7),"원자력공학"));
+                        item.add(new SubjectListItem("원자력재료공학및실험",getString(R.string.mne_8),"원자력공학"));
+                
 
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(37, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(38, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(39, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(40, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(41, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(42, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(43, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(44, intro_context));
+                        sub_list.setAdapter(adapter);
                         break;
                     case 6:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_mse, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn9);
-
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(45, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(46, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(47, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(48, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(49, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(50, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(51, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(52, intro_context));
-                        lec_btn_9.setOnClickListener(new Go_to_lec_page(53, intro_context));
-                        lec_btn_10.setOnClickListener(new Go_to_lec_page(54, intro_context));
+                        department.setText("신소재공학부");
+                        item.add(new SubjectListItem("재료과학및공학입문",getString(R.string.mse_1),"신소재과학"));
+                        item.add(new SubjectListItem("결정구조의결함",getString(R.string.mse_2),"신소재과학"));
+                        item.add(new SubjectListItem("결정기하입문",getString(R.string.mse_3),"신소재과학"));
+                        item.add(new SubjectListItem("재료의상변화",getString(R.string.mse_4),"신소재과학"));
+                        item.add(new SubjectListItem("재료의기계적거동",getString(R.string.mse_5),"신소재과학"));
+                        item.add(new SubjectListItem("전산재료과학개론",getString(R.string.mse_6),"신소재과학"));
+                        item.add(new SubjectListItem("재료열역학",getString(R.string.mse_7),"나노재료공학"));
+                        item.add(new SubjectListItem("고분자재료개론",getString(R.string.mse_8),"나노재료공학"));
+                        item.add(new SubjectListItem("재료현대물리",getString(R.string.mse_9),"나노재료공학"));
+                        item.add(new SubjectListItem("나노전자세라믹",getString(R.string.mse_10),"나노재료공학"));
+                        sub_list.setAdapter(adapter);
                         break;
                     case 7:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_ba, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn9);
-                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn12);
-                        lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
+                        department.setText("경영학부");
+                        item.add(new SubjectListItem("조직행동론",getString(R.string.ba_1),"경영학"));
+                        item.add(new SubjectListItem("마케팅관리",getString(R.string.ba_2),"경영학"));
+                        item.add(new SubjectListItem("재무회계",getString(R.string.ba_3),"경영학"));
+                        item.add(new SubjectListItem("재무관리",getString(R.string.ba_4),"경영학"));
+                        item.add(new SubjectListItem("생산관리",getString(R.string.ba_5),"경영학"));
+                        item.add(new SubjectListItem("경영전략",getString(R.string.ba_6),"경영학"));
+                        item.add(new SubjectListItem("재무회계",getString(R.string.ba_7),"재무/회계학"));
+                        item.add(new SubjectListItem("관리회계",getString(R.string.ba_8),"재무/회계학"));
+                        item.add(new SubjectListItem("재무관리",getString(R.string.ba_9),"재무/회계학"));
+                        item.add(new SubjectListItem("경영통계분석",getString(R.string.ba_10),"재무/회계학"));
+                        item.add(new SubjectListItem("미시경제학",getString(R.string.ba_11),"재무/회계학"));
+                        item.add(new SubjectListItem("투자론",getString(R.string.ba_12),"재무/회계학"));
 
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(55, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(56, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(57, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(58, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(59, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(60, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(61, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(62, intro_context));
-                        lec_btn_9.setOnClickListener(new Go_to_lec_page(63, intro_context));
-                        lec_btn_10.setOnClickListener(new Go_to_lec_page(64, intro_context));
-                        lec_btn_11.setOnClickListener(new Go_to_lec_page(65, intro_context));
-                        lec_btn_12.setOnClickListener(new Go_to_lec_page(66, intro_context));
-
-
+                        sub_list.setAdapter(adapter);
                         break;
-
                 }
                 break;
             default:

@@ -7,8 +7,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
+
+import java.util.ArrayList;
 
 import static android.view.LayoutInflater.from;
 
@@ -59,12 +62,11 @@ public class Intro_Subpager_Fragment2 extends Fragment {
 
         switch(order_of_page){
             case 0:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage1, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.new_intropage, container, false);
                 TextView depart_name_ko = (TextView) intro_View.findViewById(R.id.depart_name_ko);
-                TextView depart_name_eng = (TextView) intro_View.findViewById(R.id.depat_name_eng);
+                TextView depart_name_eng = (TextView) intro_View.findViewById(R.id.depart_name_eng);
                 TextView title = (TextView) intro_View.findViewById(R.id.title);
                 TextView contents = (TextView) intro_View.findViewById(R.id.contents);
-                ScrollView scroll1 = (ScrollView) intro_View.findViewById(R.id.scr1);
                 switch(department_id){
                     case 8:
                         depart_name_ko.setText("자연과학부");
@@ -84,7 +86,7 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                 }
                 break;
             case 1:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage2, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.new_intropage_2, container, false);
                 TextView intro_track = (TextView) intro_View.findViewById(R.id.intro_track);
                 TextView track_name = (TextView) intro_View.findViewById(R.id.name_track);
                 TextView content = (TextView) intro_View.findViewById(R.id.contents);
@@ -102,7 +104,7 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                 }
                 break;
             case 2:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage2, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.new_intropage_2, container, false);
                 TextView intro_track2 = (TextView) intro_View.findViewById(R.id.intro_track);
                 TextView track_name2 = (TextView) intro_View.findViewById(R.id.name_track);
                 TextView content2 = (TextView) intro_View.findViewById(R.id.contents);
@@ -120,7 +122,7 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                 }
                 break;
             case 3:
-                intro_View = (View) from(intro_context).inflate(R.layout.intropage2, container, false);
+                intro_View = (View) from(intro_context).inflate(R.layout.new_intropage_2, container, false);
                 TextView intro_track3 = (TextView) intro_View.findViewById(R.id.intro_track);
                 TextView track_name3 = (TextView) intro_View.findViewById(R.id.name_track);
                 TextView content3 = (TextView) intro_View.findViewById(R.id.contents);
@@ -138,67 +140,48 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                 }
                 break;
             case 4:
-                go_to_lec_explanation = new Intent(intro_context, LecPage_Popup.class);
-
+                intro_View = (View) from(intro_context).inflate(R.layout.new_listview, container, false);
+                TextView department = (TextView) intro_View.findViewById(R.id.department);
+                ListView sub_list = (ListView) intro_View.findViewById(R.id.sub_list);
+                ArrayList<SubjectListItem> item = new ArrayList<>();
+                SubjectListAdapter adapter = new SubjectListAdapter(intro_context,R.id.sub_list,item);
                 switch(department_id){
                     case 8:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_sns, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn9);
-                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn12);
-                        lec_btn_12 = (TextView) intro_View.findViewById(R.id.btn12);
-                        lec_btn_13 = (TextView) intro_View.findViewById(R.id.btn13);
+                        department.setText("자연과학부");
+                        item.add(new SubjectListItem("전자기학","","물리학"));
+                        item.add(new SubjectListItem("양자물리학","","물리학"));
+                        item.add(new SubjectListItem("수리물리학","","물리학"));
+                        item.add(new SubjectListItem("현대물리학","","물리학"));
+                        item.add(new SubjectListItem("현대대수학","","수리과학"));
+                        item.add(new SubjectListItem("수치해석","","수리과학"));
+                        item.add(new SubjectListItem("위상수학","","수리과학"));
+                        item.add(new SubjectListItem("미분기하","","수리과학"));
+                        item.add(new SubjectListItem("유기화학","","화학"));
+                        item.add(new SubjectListItem("물리화학","","화학"));
+                        item.add(new SubjectListItem("분석화학","","화학"));
+                        item.add(new SubjectListItem("무기화학","","화학"));
+                        item.add(new SubjectListItem("나노화학공정입문","","화학"));
 
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(67, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(68, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(69, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(70, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(71, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(72, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(73, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(74, intro_context));
-                        lec_btn_9.setOnClickListener(new Go_to_lec_page(75, intro_context));
-                        lec_btn_10.setOnClickListener(new Go_to_lec_page(76, intro_context));
-                        lec_btn_11.setOnClickListener(new Go_to_lec_page(77, intro_context));
-                        lec_btn_12.setOnClickListener(new Go_to_lec_page(78, intro_context));
-                        lec_btn_13.setOnClickListener(new Go_to_lec_page(79, intro_context));
 
+
+                        sub_list.setAdapter(adapter);
                         break;
                     case 9:
-                        intro_View = (View) from(intro_context).inflate(R.layout.intropage_uee, container, false);
-                        lec_btn_1 = (TextView) intro_View.findViewById(R.id.btn1);
-                        lec_btn_2 = (TextView) intro_View.findViewById(R.id.btn2);
-                        lec_btn_3 = (TextView) intro_View.findViewById(R.id.btn3);
-                        lec_btn_4 = (TextView) intro_View.findViewById(R.id.btn4);
-                        lec_btn_5 = (TextView) intro_View.findViewById(R.id.btn5);
-                        lec_btn_6 = (TextView) intro_View.findViewById(R.id.btn6);
-                        lec_btn_7 = (TextView) intro_View.findViewById(R.id.btn7);
-                        lec_btn_8 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_9 = (TextView) intro_View.findViewById(R.id.btn8);
-                        lec_btn_10 = (TextView) intro_View.findViewById(R.id.btn9);
-                        lec_btn_11 = (TextView) intro_View.findViewById(R.id.btn12);
+                        department.setText("도시환경공학부");
+                        item.add(new SubjectListItem("지구환경",getString(R.string.uee_1),"환경공학"));
+                        item.add(new SubjectListItem("수처리공학",getString(R.string.uee_2),"환경공학"));
+                        item.add(new SubjectListItem("기후변화공학",getString(R.string.uee_3),"환경공학"));
+                        item.add(new SubjectListItem("환경공학개론",getString(R.string.uee_4),"환경공학"));
+                        item.add(new SubjectListItem("도시계획개론",getString(R.string.uee_5),"도시건설공학"));
+                        item.add(new SubjectListItem("건설공학개론",getString(R.string.uee_6),"도시건설공학"));
+                        item.add(new SubjectListItem("지리정보시스템",getString(R.string.uee_7),"도시건설공학"));
+                        item.add(new SubjectListItem("재난관리공학",getString(R.string.uee_8),"재난관리공학"));
+                        item.add(new SubjectListItem("자연재해개론",getString(R.string.uee_9),"재난관리공학"));
+                        item.add(new SubjectListItem("재난관리",getString(R.string.uee_10),"재난관리공학"));
+                        item.add(new SubjectListItem("재해분석과 시스템의 안정성",getString(R.string.uee_11),"재난관리공학"));
 
-                        lec_btn_1.setOnClickListener(new Go_to_lec_page(80, intro_context));
-                        lec_btn_2.setOnClickListener(new Go_to_lec_page(81, intro_context));
-                        lec_btn_3.setOnClickListener(new Go_to_lec_page(82, intro_context));
-                        lec_btn_4.setOnClickListener(new Go_to_lec_page(83, intro_context));
-                        lec_btn_5.setOnClickListener(new Go_to_lec_page(84, intro_context));
-                        lec_btn_6.setOnClickListener(new Go_to_lec_page(85, intro_context));
-                        lec_btn_7.setOnClickListener(new Go_to_lec_page(86, intro_context));
-                        lec_btn_8.setOnClickListener(new Go_to_lec_page(87, intro_context));
-                        lec_btn_9.setOnClickListener(new Go_to_lec_page(88, intro_context));
-                        lec_btn_10.setOnClickListener(new Go_to_lec_page(89, intro_context));
-                        lec_btn_11.setOnClickListener(new Go_to_lec_page(90, intro_context));
+                        sub_list.setAdapter(adapter);
                         break;
-
                 }
                 break;
             default:
