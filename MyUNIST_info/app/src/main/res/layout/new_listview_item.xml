@@ -40,7 +40,8 @@
                     android:background="@drawable/group_mark"
                     android:elevation="5dp">
                     <TextView
-                        android:id="@+id/track"
+                        android:id="@+id/track3"
+                        android:clickable="false"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:text="신소재공학과"

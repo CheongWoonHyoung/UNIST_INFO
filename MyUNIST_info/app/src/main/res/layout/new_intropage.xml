@@ -17,10 +17,10 @@
                 android:layout_height="60dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:gravity="bottom">
                     <ImageView
                         android:layout_width="match_parent"
@@ -32,7 +32,7 @@
                     android:layout_height="match_parent"
                     android:text="@string/sample_school"
                     android:textStyle="bold"
-                    android:textSize="30dp"
+                    android:textSize="25dp"
                     android:gravity="bottom"
                     android:padding="5dp"
                     android:textColor="#FFFFFF"/>
@@ -46,19 +46,18 @@
                     android:id="@+id/depart_name_ko"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:textColor="#FFFFFF"
-                    android:paddingLeft="60dp"
+                    android:paddingLeft="45dp"
                     android:paddingTop="5dp"
                     android:text="@string/sample_subject"/>
                 <TextView
-                    android:id="@+id/depart_name_eng"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:textSize="15dp"
                     android:textColor="#FFFFFF"
-                    android:paddingLeft="60dp"
-                    android:text="material engineering"/>
+                    android:paddingLeft="45dp"
+                    android:text=" "/>
             </LinearLayout>
 
 
@@ -81,11 +80,12 @@
                 android:id="@+id/title"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:textSize="25dp"
+                android:textSize="20dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
                 android:text="뭘 넣어도 이상할게야"
                 android:paddingLeft="30dp"
+                android:paddingRight="30dp"
                 android:gravity="center_vertical"/>
         </LinearLayout>
         <LinearLayout

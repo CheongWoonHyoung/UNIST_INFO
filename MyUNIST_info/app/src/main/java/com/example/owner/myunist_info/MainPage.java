@@ -31,6 +31,8 @@ public class MainPage extends Fragment {
     }
 
 
+
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         maincontext = container.getContext();

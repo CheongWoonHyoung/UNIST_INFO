@@ -33,7 +33,7 @@ public class SubjectListAdapter extends ArrayAdapter<SubjectListItem>{
             v = vi.inflate(R.layout.new_listview_item, null);
             holder.subject_name = (TextView) v.findViewById(R.id.subject_name);
             holder.subject_contents = (TextView) v.findViewById(R.id.subject_contents);
-            holder.track = (TextView) v.findViewById(R.id.track);
+            holder.track = (TextView) v.findViewById(R.id.track3);
             v.setTag(holder);
         }else{
             holder = (SubjectListHolder) v.getTag();

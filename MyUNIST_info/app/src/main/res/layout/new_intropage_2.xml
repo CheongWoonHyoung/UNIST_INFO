@@ -17,10 +17,10 @@
                 android:layout_height="60dp"
                 android:orientation="horizontal">
                 <LinearLayout
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="25dp"
                     android:layout_marginLeft="10dp"
-                    android:layout_width="40dp"
-                    android:layout_height="40dp"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
                     android:gravity="bottom">
                     <ImageView
                         android:layout_width="match_parent"
@@ -33,7 +33,7 @@
                     android:layout_height="match_parent"
                     android:text="@string/sample_track"
                     android:textStyle="bold"
-                    android:textSize="30dp"
+                    android:textSize="25dp"
                     android:gravity="bottom"
                     android:padding="5dp"
                     android:textColor="#FFFFFF"/>
@@ -46,9 +46,9 @@
                     android:id="@+id/name_track"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:textSize="20dp"
+                    android:textSize="18dp"
                     android:textColor="#FFFFFF"
-                    android:paddingLeft="60dp"
+                    android:paddingLeft="45dp"
                     android:paddingTop="5dp"
                     android:text="@string/sample_subject"/>
             </LinearLayout>
