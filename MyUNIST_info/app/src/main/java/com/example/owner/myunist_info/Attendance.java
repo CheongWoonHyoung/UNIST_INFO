@@ -5,6 +5,8 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.FrameLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 /**
@@ -25,20 +27,20 @@ public class Attendance extends Activity {
     Button check10;
     Button check11;
     Button check12;
-    Button uncheck1;
-    Button uncheck2;
-    Button uncheck3;
-    Button uncheck4;
-    Button uncheck5;
-    Button uncheck6;
-    Button uncheck7;
-    Button uncheck8;
-    Button uncheck9;
-    Button uncheck10;
-    Button uncheck11;
-    Button uncheck12;
+    FrameLayout uncheck1;
+    FrameLayout uncheck2;
+    FrameLayout uncheck3;
+    FrameLayout uncheck4;
+    FrameLayout uncheck5;
+    FrameLayout uncheck6;
+    FrameLayout uncheck7;
+    FrameLayout uncheck8;
+    FrameLayout uncheck9;
+    FrameLayout uncheck10;
+    FrameLayout uncheck11;
+    FrameLayout uncheck12;
 
-    Button clear;
+    TextView clear;
 
     int NumberOfCheck=0;
 
@@ -61,29 +63,29 @@ public class Attendance extends Activity {
         check11 = (Button) findViewById(R.id.check_dhe);
         check12 = (Button) findViewById(R.id.check_ls);
 
-        uncheck1 = (Button) findViewById(R.id.unchecked_ba);
+        uncheck1 = (FrameLayout) findViewById(R.id.unchecked_ba);
         uncheck1.bringToFront();
-        uncheck2 = (Button) findViewById(R.id.unchecked_chem);
+        uncheck2 = (FrameLayout) findViewById(R.id.unchecked_chem);
         uncheck2.bringToFront();
-        uncheck3 = (Button) findViewById(R.id.unchecked_cse);
+        uncheck3 = (FrameLayout) findViewById(R.id.unchecked_cse);
         uncheck3.bringToFront();
-        uncheck4 = (Button) findViewById(R.id.unchecked_ece);
+        uncheck4 = (FrameLayout) findViewById(R.id.unchecked_ece);
         uncheck4.bringToFront();
-        uncheck5 = (Button) findViewById(R.id.unchecked_ee);
+        uncheck5 = (FrameLayout) findViewById(R.id.unchecked_ee);
         uncheck5.bringToFront();
-        uncheck6 = (Button) findViewById(R.id.unchecked_mse);
+        uncheck6 = (FrameLayout) findViewById(R.id.unchecked_mse);
         uncheck6.bringToFront();
-        uncheck7 = (Button) findViewById(R.id.unchecked_mne);
+        uncheck7 = (FrameLayout) findViewById(R.id.unchecked_mne);
         uncheck7.bringToFront();
-        uncheck8 = (Button) findViewById(R.id.unchecked_mth);
+        uncheck8 = (FrameLayout) findViewById(R.id.unchecked_mth);
         uncheck8.bringToFront();
-        uncheck9 = (Button) findViewById(R.id.unchecked_phy);
+        uncheck9 = (FrameLayout) findViewById(R.id.unchecked_phy);
         uncheck9.bringToFront();
-        uncheck10 = (Button) findViewById(R.id.unchecked_uee);
+        uncheck10 = (FrameLayout) findViewById(R.id.unchecked_uee);
         uncheck10.bringToFront();
-        uncheck11 = (Button) findViewById(R.id.unchecked_dhe);
+        uncheck11 = (FrameLayout) findViewById(R.id.unchecked_dhe);
         uncheck11.bringToFront();
-        uncheck12 = (Button) findViewById(R.id.unchecked_ls);
+        uncheck12 = (FrameLayout) findViewById(R.id.unchecked_ls);
         uncheck12.bringToFront();
 
 
@@ -167,16 +169,24 @@ public class Attendance extends Activity {
 
 
 
-        clear =(Button) findViewById(R.id.btn_clear);
+        clear =(TextView) findViewById(R.id.btn_clear);
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (NumberOfCheck >= 5) {
+                switch(NumberOfCheck) {
+                    case 0:
+                    case 1:
+                    case 2:
+                    case 3:
+                    case 4:
+                        break;
+                    default:
+                        NumberOfCheck = 4;
+                        break;
 
-                } else {
-                    Toast.makeText(Attendance.this, "다섯개 이상의 부스 참여를 인증한 뒤 다시 시도해 주십시오.", Toast.LENGTH_SHORT).show();
                 }
             }
+
         });
 
 

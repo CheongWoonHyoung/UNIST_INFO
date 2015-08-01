@@ -68,21 +68,18 @@
                 android:layout_height="70dp"
                 android:background="@drawable/ba"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_ba"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_ba"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
-
-
-
+            </FrameLayout>
         </RelativeLayout>
 
         <RelativeLayout
@@ -96,19 +93,19 @@
                 android:layout_height="70dp"
                 android:background="@drawable/chem"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_chem"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:layout_marginLeft="20dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_chem"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
         </RelativeLayout>
 
@@ -122,19 +119,20 @@
                 android:layout_height="70dp"
                 android:background="@drawable/cse"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_cse"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:layout_marginLeft="20dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_cse"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
         </RelativeLayout>
 
     </LinearLayout>
@@ -156,18 +154,19 @@
                 android:layout_height="70dp"
                 android:background="@drawable/ece"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_ece"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_ece"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
         </RelativeLayout>
 
         <RelativeLayout
@@ -180,19 +179,20 @@
                 android:layout_height="70dp"
                 android:background="@drawable/ee"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_ee"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:layout_marginLeft="20dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_ee"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
         </RelativeLayout>
         <RelativeLayout
@@ -206,19 +206,20 @@
                 android:layout_height="70dp"
                 android:background="@drawable/mse"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_mse"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:layout_marginLeft="20dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_mse"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
         </RelativeLayout>
 
@@ -239,18 +240,19 @@
                 android:background="@drawable/mne"
                 android:elegantTextHeight="false"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_mne"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_mne"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
         </RelativeLayout>
         <RelativeLayout
@@ -263,19 +265,20 @@
                 android:layout_height="70dp"
                 android:background="@drawable/mth"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_mth"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:layout_marginLeft="20dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_mth"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
         </RelativeLayout>
 
@@ -289,19 +292,20 @@
                 android:layout_height="70dp"
                 android:background="@drawable/phy"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_phy"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:layout_marginLeft="20dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_phy"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
         </RelativeLayout>
 
@@ -321,18 +325,19 @@
                 android:layout_height="70dp"
                 android:background="@drawable/uee"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_uee"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_uee"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
 
 
@@ -348,19 +353,20 @@
                 android:layout_height="70dp"
                 android:background="@drawable/dhe"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_dhe"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:layout_marginLeft="20dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_dhe"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
         </RelativeLayout>
 
@@ -374,19 +380,20 @@
                 android:layout_height="70dp"
                 android:background="@drawable/ls"
                 android:elevation="9dp" />
-            <LinearLayout
+            <FrameLayout
+                android:id="@+id/unchecked_ls"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:elevation="5dp"
                 android:layout_marginLeft="20dp"
                 android:background="#1A237E">
                 <Button
-                    android:id="@+id/unchecked_ls"
+
                     android:layout_width="70dp"
                     android:layout_height="70dp"
                     android:background="@drawable/ic_https_white_24dp"
                     android:elevation="10dp" />
-            </LinearLayout>
+            </FrameLayout>
 
         </RelativeLayout>
 

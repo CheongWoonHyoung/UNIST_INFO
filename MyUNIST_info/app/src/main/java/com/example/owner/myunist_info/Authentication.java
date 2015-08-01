@@ -7,12 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 
 public class Authentication extends Activity {
     EditText editText;
-    Button button;
+    LinearLayout button;
     private String ba = "3141";
     private String chem = "5926";
     private String cse = "5358";
@@ -32,7 +33,7 @@ public class Authentication extends Activity {
         setContentView(R.layout.authentication);
 
         editText = (EditText) findViewById(R.id.edt_check);
-        button = (Button) findViewById(R.id.btn_check);
+        button = (LinearLayout) findViewById(R.id.btn_check);
 
 
 
