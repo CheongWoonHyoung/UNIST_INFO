@@ -71,13 +71,13 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                 switch(department_id){
                     case 8:
                         depart_name_ko.setText("자연과학부");
-//                        main_backG1.setBackground(R.drawable);
+                        main_backG1.setBackgroundResource(R.drawable.snsbg);
                         title.setText(R.string.SNS_txt_0);
                         contents.setText("  자연과학은 자연계에 존재하는 보편적인 법칙을 찾아내고 이해함으로써 인류의 발전에 공헌하는 것을 목표로 하는 학문입니다. \n \n  역사적으로 이러한 자연과학적인 결과를 공학과 융합하는 방법으로 시대를 선도하는 새로운 테크놀로지가 개발되어 왔고, UNIST는 그런 융합을 학교 발전의 주요 전략의 하나로 채택하여 수행하고 있습니다. \n \n  UNIST의 자연과학부는 기초과학 교육을 담당하고, 창의적인 학제간 연구를 수행하는 것을 목표로 2010년에 창설되어 운영되어 왔습니다. \n \n  최고수준의 자연과학 연구를 수행하기 위해 국내외의 세계적인 석학 유치와 국제과학비즈니스벨트 캠퍼스 연구단 선정 등으로 국내는 물론 세계에서도 인정받는 학부로 성장하고 있습니다.\n \n ");
                         break;
                     case 9:
                         depart_name_ko.setText("도시환경공학부");
-//                        main_backG1.setBackground(R.drawable);
+                        main_backG1.setBackgroundResource(R.drawable.ueebg);
                         title.setText(R.string.UEE_txt_0);
                         contents.setText("  도시환경공학부에서는 급격한 산업화로부터 기인한 환경오염과 기후변화 및 각종 자연재해로 인해 도시와 시민들의 안전에 심각한 문제가 대두됨에 따라, 이를 해결하기 위한 환경보호, 지속가능한 발전, 재해관리, 인류 복지 증진 등을 아우르는 융합학문을 연구하고 있습니다. \n \n  도시환경 공학 분야에서 혁신적 신기술을 개발하고 미래 글로벌 리더 양성을 목표로 하고 있습니다." );
                         break;
