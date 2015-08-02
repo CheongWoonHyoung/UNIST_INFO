@@ -52,6 +52,18 @@ public class SendMessage extends Activity {
                 mail = edt_mail.getText().toString();
                 title = edt_title.getText().toString();
                 content = edt_content.getText().toString();
+
+                Intent email = new Intent(Intent.ACTION_SEND);
+                String[] mailadd = {"unistinfo2015@gmail.com"};
+
+                email.setType("plain/text");
+                email.putExtra(Intent.EXTRA_EMAIL, mailadd);
+                email.putExtra(Intent.EXTRA_SUBJECT, "[질문] "+name+"("+title+")");
+                email.putExtra(Intent.EXTRA_TEXT, "이름: " + name + "\n" + "메일:  " + mail + "\n" + "제목: " + title + "\n" +"내용: "+content);
+
+                startActivity(email);
+
+                /*
                 AsyncTask task = new AsyncTask() {
                     @Override
                     protected Object doInBackground(Object[] params) {
@@ -77,7 +89,9 @@ public class SendMessage extends Activity {
                 /*
                 Intent intent = new Intent(getApplicationContext(), MainActivity.class);
                 startActivity(intent);
-*/
+
+                */
+
             }
         });
     }

@@ -1,6 +1,7 @@
 package com.example.owner.myunist_info;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -173,16 +174,11 @@ public class Attendance extends Activity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                switch(NumberOfCheck) {
-                    case 0:
-                    case 1:
-                    case 2:
-                    case 3:
-                    case 4:
-                        break;
-                    default:
-                        NumberOfCheck = 4;
-                        break;
+                if (NumberOfCheck <5) {
+                    Toast.makeText(Attendance.this, "다섯개 이상의 부스 참여 인증 후 응모 가능합니다.", Toast.LENGTH_SHORT).show();
+                } else if (NumberOfCheck >=5) {
+                    Intent intent = new Intent(getApplicationContext(), SendEmailForGift.class);
+                    startActivity(intent);
 
                 }
             }
