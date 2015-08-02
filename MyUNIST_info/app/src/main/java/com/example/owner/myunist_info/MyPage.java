@@ -115,7 +115,7 @@ public class MyPage  extends Fragment {
         ab.setPositiveButton(R.string.call_dialog_confirm, new DialogInterface.OnClickListener() {
             @Override
             public void onClick(DialogInterface arg0, int arg1) {
-                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:010-5030-1671"));
+                Intent intent = new Intent(Intent.ACTION_CALL, Uri.parse("tel:052-217-4328"));
                 startActivity(intent);
                 setDismiss(callDialog);
             }
