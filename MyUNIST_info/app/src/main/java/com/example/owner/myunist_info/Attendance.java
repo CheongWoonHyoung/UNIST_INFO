@@ -131,7 +131,7 @@ public class Attendance extends Activity {
             NumberOfCheck++;
         }
         if(ch_check4.equals("1")) {
-            uncheck5.setVisibility(View.INVISIBLE);
+            uncheck4.setVisibility(View.INVISIBLE);
             NumberOfCheck++;
         }
         if(ch_check5.equals("1")) {

@@ -53,13 +53,9 @@
         </activity>
         <activity
             android:name=".Splash1"
-<<<<<<< HEAD
-            android:label="@string/title_activity_splash1"
-            android:screenOrientation="portrait" >
-=======
+            android:screenOrientation="portrait"
             android:label="UNIST Info"
             >
->>>>>>> 818eb7324528e187f7566c79de2b7f5a04f2ac1f
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
