@@ -177,6 +177,7 @@ public class Attendance extends Activity {
                 if (NumberOfCheck <5) {
                     Toast.makeText(Attendance.this, "다섯개 이상의 부스 참여 인증 후 응모 가능합니다.", Toast.LENGTH_SHORT).show();
                 } else if (NumberOfCheck >=5) {
+                    NumberOfCheck--;
                     Intent intent = new Intent(getApplicationContext(), SendEmailForGift.class);
                     startActivity(intent);
 

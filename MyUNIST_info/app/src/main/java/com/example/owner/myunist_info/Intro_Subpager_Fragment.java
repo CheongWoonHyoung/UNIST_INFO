@@ -61,7 +61,6 @@ public class Intro_Subpager_Fragment extends Fragment{
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         intro_context = container.getContext();
 
-
         switch(order_of_page){
             case 0:
                 intro_View = (View) from(intro_context).inflate(R.layout.new_intropage, container, false);
@@ -101,7 +100,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         break;
                     case 6:
                         depart_name_ko.setText("신소재공학부");
-                        main_backG1.setBackgroundResource(R.drawable.mnebg);
+                        main_backG1.setBackgroundResource(R.drawable.msebg);
                         title.setText(R.string.MSE_txt_0);
                         contents.setText("  신소재공학부는 최첨단재료의 공정-구조-물성의 상호 관계를 체계적으로 학습하는 학부로서 다양한 현대 학문들과 밀접한 연관성을 갖고 있습니다.   \n \n  기간산업에 사용되는 금속, 세라믹, 반도체, 광학재료는 물론, 나노재료를 포함한 최첨단 신재료를 교육하고 연구하여, 현대사회가 요구하는 재료 연구자, 신소재 전문가 및 고급 기술 인력을 양성하고 있습니다.");
                         break;
