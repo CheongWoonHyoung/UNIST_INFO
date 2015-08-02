@@ -24,7 +24,9 @@
             android:textSize="27dp"
             android:background="#00b1b7"
             android:paddingLeft="10dp"
-            android:paddingRight="10dp" />
+            android:paddingRight="10dp"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp" />
     </RelativeLayout>
 
     <LinearLayout
@@ -167,7 +169,7 @@
                         android:id="@+id/b34"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="ANNOUNCE"
+                        android:text="Announce"
                         android:background="#0a0857"
                         android:textColor="#FFFFFF" />
                 </LinearLayout>
@@ -181,7 +183,7 @@
                         android:id="@+id/b35"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="@string/ATTENDANCE"
+                        android:text="Attendance"
                         android:background="#00b1b7"
                         android:textColor="#FFFFFF" />
                 </LinearLayout>
