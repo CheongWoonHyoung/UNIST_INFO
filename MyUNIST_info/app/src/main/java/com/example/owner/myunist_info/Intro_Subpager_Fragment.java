@@ -15,6 +15,8 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 import static android.view.LayoutInflater.from;
+import static com.example.owner.myunist_info.R.string.ECE_txt_0;
+import static com.example.owner.myunist_info.R.string.ECHE_txt_0;
 
 /**
  * Created by cheongwh on 2015. 7. 13..
@@ -70,43 +72,42 @@ public class Intro_Subpager_Fragment extends Fragment{
                 switch(department_id){
                     case 1:
                         depart_name_ko.setText("디자인 및 인간공학부");
-//                        main_backG1.setBackground(R.drawable);
+                        main_backG1.setBackgroundResource(R.drawable.dhebg);
                         title.setText("제품 개발 과정의 디자인들");
                         contents.setText("  디자인 및 인간공학부는 인간중심 제품 및 시스템의 기획, 설계, 제조, 상업하의 전 과정에 필요한 기본 및 응용기술을 연구하고 있습니다.   \n \n  산업 디자인 트랙과 인간 및 시스템공학 트랙으로 구성되어 있으며, ‘혁신적인 Engineering Design 인재 양성과 연구를 통해 인류 삶의 질 향상에 기여’라는 비전을 이루기 위하여 노력하고 있습니다.");
                         break;
                     case 2:
                        depart_name_ko.setText("에너지 및 화학공학부");
-//                        main_backG1.setBackground(R.drawable);
-                        title.setText(R.string.ECHE_txt_0);
+                        main_backG1.setBackgroundResource(R.drawable.echebg);
+                        title.setText(ECHE_txt_0);
                         contents.setText("  에너지 및 화학공학부에서는 화학공학을 근간으로 에너지 변환 및 저장에 관련된 응용 학문에 필요한 첨단 융합 교육을 제공하며, 학생들은 촉매, 나노소재 및 소자, 정밀화학, 고분자, 응용분자화학 및 이차전지, 연료전지, 태양전지 등 에너지 관련 학문들에 대한 기본적인 이해와 실제적인 응용분야를 배우게 됩니다.   \n \n  이를 통해 학생들은 에너지 및 화학공학 분야에 있어 국제적이며 실용적인 감각을 익히고, 창의적이고 도전적인 자세를 가진 공학자로 거듭나게 될 것입니다.");
                         break;
                     case 3:
                         depart_name_ko.setText("전기전자컴퓨터공학부");
-//                        main_backG1.setBackground(R.drawable);
-                        title.setText(R.string.ECE_txt_0);
+                        title.setText(ECE_txt_0);
                         contents.setText("  전기전자컴퓨터공학부는 전기, 전자, 컴퓨터 공학과 다양한 학문의 융합을 통하여 미래 사회가 요구하는 과학기술을 선도할 인재를 양성하고자 합니다.   \n \n  이와 함께, 인간편의정보통신연구부는 학제적 융합을 통해 자동차, 조선, 에너지플랜트 등의 자동화 및 지능화를 추구합니다.   \n \n  또한, 바이오, 나노, 환경, 디자인 등의 타 학문과 IT 기술을 융합하여 우리 삶의 방식을 바꾸는 새로운 모습의 기술로 탄생하는데 도움을 주고자 합니다." );
                         break;
                     case 4:
                         depart_name_ko.setText("생명과학부");
-//                        main_backG1.setBackground(R.drawable);
+                        main_backG1.setBackgroundResource(R.drawable.lsbg);
                         title.setText(R.string.LS_txt_0);
                         contents.setText("  생명과학부는 생명 현상에 대한 이해와 생물의 다양한 기능을 연구하는 생명 과학을 기초로 나노과학 및 공학기술을 융합하여 질병의 원인 규명을 위한 기초 연구 및 질병의 진단 및 치료 기술 개발을 통하여 인류의 건강 증진에 기여하기 위한 학문입니다.   \n \n  미래 핵심 과학 기술 분야로 주목받고 있는 생명과학 및 첨단 의료 기술 분야를 선도할 창의적 글로벌 인재 양성과 새로운 미래기술 개발을 위한 다양한 연구프로그램을 제공합니다.");
                         break;
                     case 5:
                         depart_name_ko.setText("기계 및 원자력공학부");
-//                        main_backG1.setBackground(R.drawable);
+                        main_backG1.setBackgroundResource(R.drawable.mnebg);
                         title.setText(R.string.MNE_txt_0);
                         contents.setText("  기계 및 원자력공학부는 최신 연구 인프라를 바탕으로 첨단공학기술 및 다학제간 융합기술 개발을 통하여, 다양한 기계시스템 설계, 해석, 생산 및 관리, 그리고 인류 에너지 안보를 위한 원자력 기술개발 연구를 수행하고 있습니다.   \n \n  첨단 산업분야에 크게 기여할 수 있는 창의적인 전문가를 양성하고 있으며, 국가의 경쟁력 향상에 기여할 최첨단 연구를 수행하고 있습니다.");
                         break;
                     case 6:
                         depart_name_ko.setText("신소재공학부");
-//                        main_backG1.setBackground(R.drawable);
+                        main_backG1.setBackgroundResource(R.drawable.mnebg);
                         title.setText(R.string.MSE_txt_0);
                         contents.setText("  신소재공학부는 최첨단재료의 공정-구조-물성의 상호 관계를 체계적으로 학습하는 학부로서 다양한 현대 학문들과 밀접한 연관성을 갖고 있습니다.   \n \n  기간산업에 사용되는 금속, 세라믹, 반도체, 광학재료는 물론, 나노재료를 포함한 최첨단 신재료를 교육하고 연구하여, 현대사회가 요구하는 재료 연구자, 신소재 전문가 및 고급 기술 인력을 양성하고 있습니다.");
                         break;
                     case 7:
                         depart_name_ko.setText("경영학부");
-//                        main_backG1.setBackground(R.drawable);
+                        main_backG1.setBackgroundResource(R.drawable.babg);
                         title.setText(R.string.BA_txt_0);
                         contents.setText("  경영학부는 과학기술과 경영마인드의 결합이라는 모토 아래 글로벌 시대를 선도해 나갈 수 있는 기술경영의 핵심 인재 양성을 목표로 하고 있습니다.   \n \n  경영학부에서는 이공계과학기술대학의 특성에 맞는 기술·경영의 융합적 사고 함양과 함께 경제이론 및 기술경영, 재무/회계, 경영정보시스템 마케팅, 인사/조직행동 분야의 교육과정을 운영하여 경영자의 기본 소양을 갖출 수 있도록 교육을 실시하고 있습니다.   \n \n  또한 Entrepreneurship 과정을 마련하여 첨단 기술을 사업화할 수 있는 능력을 갖출 수 있도록 하였습니다.   \n \n  학부 교육과정을 통하여 학생들은 경영자의 기본 소양을 함양시키며 경영의 여러 분야를 전공할 수 있습니다.   \n \n ");
                         break;
@@ -126,7 +127,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         intro_track.setText("트랙 소개");
                         track_name.setText("산업디자인");
                         content.setText("  산업 디자인 트랙은 제품의 혁신적인 디자인과 제품-서비스 시스템을 주도할 수 있는 창의적인 디자이너를 양성하기 위한 트랙입니다.   \n \n  산업디자인 트랙은 문제의 정의, 사용자와 시장 분석, 요구 파악, 창의적인 아이디어 생성, 형태와 기능 개발, 설계, 프로토타이핑, 사업의 시작을 포함하는 디자인 지식 및 전체적인 제품 개발 과정과 관련된 방법과 기술에 대한 통합 교육적인 수업을 제공합니다.   \n \n  산업 디자인 트랙을 전공하는 학생들은 우리 사회에서 인간 중심적, 과학적 방법을 통해 긍정적이고 혁신적인 변화를 주도하면서, 통합적인 디자이너 및 전문가로써 매우 중요한 역할을 담당할 것입니다.  \n \n  ");
-//                        main_backG2.setBackground(R.drawable);
+                        main_backG2.setBackgroundResource(R.drawable.dhebg);
                         break;
                     case 2:
                         intro_track.setText("트랙 소개");
