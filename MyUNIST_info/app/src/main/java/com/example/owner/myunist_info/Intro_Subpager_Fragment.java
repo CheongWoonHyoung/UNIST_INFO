@@ -210,7 +210,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         break;
                     case 7:
                         intro_track2.setText("트랙 소개");
-                        track_name2.setText("재무/회계");
+                        track_name2.setText("재무/회계학");
                         content2.setText("  재무/회계 분야에서는 수리/과학과 경제/경영 마인드를 접목하여 재무/회계와 관련된 복합적 문제 해결능력을 갖출 수 있도록 하는데 초점을 두고 글로벌 경제시대로 선도해 나갈 수 있는 창의적 인재 양성을 목표로 하고 있습니다.   \n \n  재무 분야에서는 자본시장에서 개인과 기업 그리고 여러 조직들이 자본을 조달하고 운영하여 재무 또는 금융 의사결정을 효율적으로 하는 방법과 이론을 학습하고 있습니다.   \n \n 교과목은 이론과 실제 기법들을 배울 수 있는 재무관리, 투자분석, 자본시장이론, 금융공학 등의 과목들이 제공합니다.   \n \n  회계분야에서는 경영자가 재무회계 자료를 외부 투자자와 자본시장의 이해관계자들에게 효과적으로 전달하고, 관리회계 자료를 적용하여 내부적인 재무 또는 경제의사결정을 효율적으로 하도록 도와주고 있습니다.   \n \n  " );
                         main_backG3.setBackgroundResource(R.drawable.babg);
                        break;
@@ -239,7 +239,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         sub_list.setAdapter(adapter);
                         break;
                     case 2:
-                        department.setText("에너지 및 화공학부");
+                        department.setText("에너지 및 화학공학부");
                         item.add(new SubjectListItem("학무기화학",getString(R.string.eche_1),"에너지 공학"));
                         item.add(new SubjectListItem("전기화학",getString(R.string.eche_2),"에너지 공학"));
                         item.add(new SubjectListItem("고체화학",getString(R.string.eche_3),"에너지 공학"));
@@ -278,7 +278,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         sub_list.setAdapter(adapter);
                         break;
                     case 5:
-                        department.setText("기계 및 원자공학부");
+                        department.setText("기계 및 원자력공학부");
                         item.add(new SubjectListItem("열역학", getString(R.string.mne_1), "기계공학"));
                         item.add(new SubjectListItem("유체역학",getString(R.string.mne_2),"기계공학"));
                         item.add(new SubjectListItem("고체역학",getString(R.string.mne_3),"기계공학"));

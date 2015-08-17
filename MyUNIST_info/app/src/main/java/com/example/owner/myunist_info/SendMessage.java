@@ -54,7 +54,7 @@ public class SendMessage extends Activity {
                 content = edt_content.getText().toString();
 
                 Intent email = new Intent(Intent.ACTION_SEND);
-                String[] mailadd = {"unistinfo2015@gmail.com"};
+                String[] mailadd = {"lsy0603@unist.ac.kr"};
 
                 email.setType("plain/text");
                 email.putExtra(Intent.EXTRA_EMAIL, mailadd);
