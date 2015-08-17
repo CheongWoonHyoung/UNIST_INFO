@@ -27,18 +27,18 @@
                     android:textColor="#00897B"
                     android:text="@string/sample_subtitle"
                     android:textSize="15dp"
-                    android:gravity="bottom"
                     android:textStyle="bold"
                     android:paddingBottom="5dp"
-                    android:paddingLeft="10dp"/>
+                    android:paddingLeft="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:gravity="center_vertical" />
                 <RelativeLayout
                     android:layout_width="100dp"
                     android:layout_height="25dp"
-                    android:layout_gravity="right|bottom"
+                    android:layout_gravity="center_vertical|bottom|right"
                     android:layout_marginBottom="5dp"
-                    android:layout_marginRight="10dp"
-                    android:background="@drawable/group_mark"
-                    android:elevation="5dp">
+                    android:layout_marginRight="13dp"
+                    android:background="#ffff8624">
                     <TextView
                         android:id="@+id/track3"
                         android:clickable="false"
@@ -46,8 +46,8 @@
                         android:layout_height="match_parent"
                         android:text="신소재공학과"
                         android:textSize="13dp"
-                        android:gravity="center"
-                        android:textColor="#FFFFFF"/>
+                        android:textColor="#FFFFFF"
+                        android:gravity="center" />
                 </RelativeLayout>
 
             </FrameLayout>
