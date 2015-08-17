@@ -240,10 +240,10 @@ public class Intro_Subpager_Fragment extends Fragment{
                         break;
                     case 2:
                         department.setText("에너지 및 화학공학부");
-                        item.add(new SubjectListItem("학무기화학",getString(R.string.eche_1),"에너지 공학"));
+                        item.add(new SubjectListItem("무기화학",getString(R.string.eche_1),"에너지 공학"));
                         item.add(new SubjectListItem("전기화학",getString(R.string.eche_2),"에너지 공학"));
                         item.add(new SubjectListItem("고체화학",getString(R.string.eche_3),"에너지 공학"));
-                        item.add(new SubjectListItem("에너지 변환 및 저장실",getString(R.string.eche_4),"에너지 공학"));
+                        item.add(new SubjectListItem("에너지 변환 및 저장실험",getString(R.string.eche_4),"에너지 공학"));
                         item.add(new SubjectListItem("고분자재료과학",getString(R.string.eche_5),"에너지 공학"));
                         item.add(new SubjectListItem("태양전지실험",getString(R.string.eche_7),"에너지 공학"));
                         item.add(new SubjectListItem("유기화학",getString(R.string.eche_8),"화학 공학"));

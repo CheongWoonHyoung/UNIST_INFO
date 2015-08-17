@@ -70,6 +70,10 @@
             android:name=".SendEmailForGift"
             android:label="@string/title_activity_send_email_for_gift" >
         </activity>
+        <activity
+            android:name=".FAQ"
+            android:label="FAQ" >
+        </activity>
     </application>
 
 </manifest>
