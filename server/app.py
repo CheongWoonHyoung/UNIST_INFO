@@ -9,11 +9,7 @@ app.secret_key = 'secretkey'
 
 app.config['MYSQL_DATABASE_USER'] = 'root'
 app.config['MYSQL_DATABASE_PASSWORD'] = 'projectDanbi'
-app.config['MYSQL_DATABASE_DB'] = 'unistudy'
-
-@app.route('/')
-def index():
-    return "hi"
+app.config['MYSQL_DATABASE_DB'] = 'unist_info'
 
 def init_server():
     for module_name in MODULE_NAMES:
