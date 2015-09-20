@@ -2,7 +2,7 @@
 
 import MySQLdb
 from flaskext.mysql import MySQL
-from server import app
+from app import *
 
 class DataBase():
 
