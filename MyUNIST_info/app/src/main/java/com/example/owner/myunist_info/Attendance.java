@@ -177,7 +177,7 @@ public class Attendance extends Activity {
                 if (NumberOfCheck <5) {
                     Toast.makeText(Attendance.this, "참여 횟수가 부족합니다", Toast.LENGTH_SHORT).show();
                 } else if (NumberOfCheck >=5) {
-                    NumberOfCheck--;
+                    //NumberOfCheck--;
                     Intent intent = new Intent(getApplicationContext(), SendEmailForGift.class);
                     startActivity(intent);
 
