@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon">
+
+        <title>유니스트 영재교육원</title>
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="/static/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>유니스트 영재교육원</h1>
+                <h5>공지사항</h5>
+            </div>
+            <div class="header-text">
+                <p>
+                    영재교육원 어플리케이션 공지사항입니다.
+                </p>
+            </div>
+
+            <form action="" method="post" enctype="multipart/form-data" id="announce">
+                <div class="form-group">
+                    <label for="name">제목</label>
+                    <input type="text" class="form-control" name="title" placeholder="ex) 깻잎칩킨 후라이드" required="true">
+                </div>
+
+                <div class="form-group">
+                    <label for="comment">내용</label>
+
+                    <textarea name="contents" class="form-control" rows="20" cols="80" required="true">
+                        공지사항을 입력해주세요.
+                    </textarea>
+                </div>
+
+                <div class="submit">
+                    <p><input type="submit" class="btn btn-primary btn-lg" value="등록하기"></p>
+                </div>
+            </form>
+
+            <footer class ="footer-edit">
+                <p class="pull-right">
+                    <a href="">공지사항 목록 보기</a>
+                </p>
+                <p>UNIST NPC</p>
+            </footer>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script type="text/javascript">
+        $("form").submit(function(e) {
+            var ref = $(this).find("[required]");
+            $(ref).each(function() {
+                if ($(this).val() == '') {
+                    alert('필수 항목을 모두 채워주세요!');
+                    $(this).focus();
+                    e.preventDefault();
+                    return false;
+                }
+            });
+        });
+        {% if submit %}
+            alert('성공적으로 제출하였습니다.');
+        {% endif %}
+        </script>
+    </body>
+</html>
