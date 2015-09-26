@@ -52,6 +52,18 @@
             android:theme="@android:style/Theme.Dialog" >
         </activity>
         <activity
+            android:name=".Multiple_choice_Intro"
+            android:label="Multiple_choice_Intro">
+        </activity>
+        <activity
+            android:name=".Select_between_two"
+            android:label="Select_between_two">
+        </activity>
+        <activity android:name=".Multiple_choice"
+            android:label="Multiple_choice"></activity>
+        <activity android:name=".Step1Status"
+            android:label="Step1Status"></activity>
+        <activity
             android:name=".Splash1"
             android:screenOrientation="portrait"
             android:label="UNIST Info"
