@@ -14,10 +14,10 @@ def announce():
         return ""
 
     # GET : 글 가져오기
-    cursor = db.execute("SELECT * FROM `announce`;")
-    data = cursor.fetchall()
-    print data
-    return json.dumps(data)
+    #cursor = db.execute("SELECT * FROM `announce`;")
+    #data = cursor.fetchall()
+    ##print data
+    return render_template('announce.html')#json.dumps(data)
 
 def get_json(cursor):
     return json.dumps([ dict(line) for line in [zip([ column[0] for column in
