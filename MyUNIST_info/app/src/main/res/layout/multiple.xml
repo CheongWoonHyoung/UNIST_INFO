@@ -4,7 +4,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:background="#ff000000">
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
@@ -15,18 +16,45 @@
                 android:id="@+id/btn_selector1"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-            </Button>
+                android:layout_height="match_parent"
+                android:background="#ffffa121"
+                android:textSize="25dp"/>
             <Button
                 android:text="2번 선택지"
                 android:id="@+id/btn_selector2"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                >
+                android:background="#ffa1ff21"
+                android:textSize="25dp"/>
 
-            </Button>
+        </LinearLayout>
+        <LinearLayout
+            android:background="#ffffffff"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/tv_question"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:text="질문 준비 중 입니다."
+                android:textSize="20dp"
+                android:textColor="#ff000000"/>
+            <TextView
+                android:id="@+id/tv_q_number"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1/20"
+                android:textSize="20dp"
+                android:textColor="#ff212121"/>
+
+
 
         </LinearLayout>
         <LinearLayout
@@ -39,41 +67,37 @@
                 android:id="@+id/btn_selector3"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </Button>
+                android:layout_height="match_parent"
+                android:background="#ff21ffa1"
+                android:textSize="25dp"/>
             <Button
                 android:text="4번 선택지"
                 android:id="@+id/btn_selector4"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-
-            </Button>
+                android:layout_height="match_parent"
+                android:background="#ffa121ff"
+                android:textSize="25dp"/>
 
         </LinearLayout>
     </LinearLayout>
+<!--
     <LinearLayout
-        android:background="#ffffff"
+        android:background="#eeffffff"
         android:layout_centerInParent="true"
         android:layout_width="300dp"
         android:layout_height="170dp"
         android:orientation="horizontal"
-        >
+        android:layout_weight= "1">
 
         <TextView
             android:id="@+id/tv_question"
             android:layout_marginTop="30dp"
             android:layout_marginLeft="30dp"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:text="질문 준비 중 입니다."
             android:textSize="20dp"/>
-        <View
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            />
         <TextView
             android:id="@+id/tv_q_number"
             android:layout_marginRight="20dp"
@@ -86,5 +110,5 @@
 
 
     </LinearLayout>
-
+-->
 </RelativeLayout>

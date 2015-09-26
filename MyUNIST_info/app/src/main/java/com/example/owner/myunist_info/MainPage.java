@@ -143,7 +143,7 @@ public class MainPage extends Fragment {
         auth_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(maincontext,Authentication.class);
+                Intent intent = new Intent(maincontext,Select_between_two.class);
                 startActivityForResult(intent,INTRODUCTION_INTENT_CODE);
             }
         });

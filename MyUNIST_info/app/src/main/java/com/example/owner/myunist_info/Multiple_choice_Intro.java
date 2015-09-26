@@ -21,10 +21,10 @@ public class Multiple_choice_Intro extends Activity {
         Button btn = (Button) findViewById(R.id.button);
 
         btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent i = new Intent(mcontext,Multiple_choice.class);
-                startActivity(i);
+                    @Override
+                    public void onClick(View v) {
+                        Intent i = new Intent(mcontext,Multiple_choice.class);
+                        startActivity(i);
             }
         });
     }

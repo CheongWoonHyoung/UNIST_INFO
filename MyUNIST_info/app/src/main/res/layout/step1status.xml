@@ -18,9 +18,12 @@
                 android:layout_height="wrap_content"
                 android:text="과학/공학"/>
             <ProgressBar
+                android:id="@+id/engine"
+                android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"
+                style="?android:attr/progressBarStyleHorizontal"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:max="100"
+                android:max="12"
                 android:progress="10"/>
 
         </LinearLayout>
@@ -34,9 +37,12 @@
                 android:layout_height="wrap_content"
                 android:text="경영"/>
             <ProgressBar
+                android:id="@+id/manage"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:max="100"
+                android:max="12"
                 android:progress="10"/>
 
         </LinearLayout>
@@ -50,9 +56,12 @@
                 android:layout_height="wrap_content"
                 android:text="디자인"/>
             <ProgressBar
+                android:id="@+id/design"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_marginLeft="@dimen/abc_button_padding_horizontal_material"
                 android:layout_width="150dp"
                 android:layout_height="wrap_content"
-                android:max="100"
+                android:max="12"
                 android:progress="10"/>
 
         </LinearLayout>
@@ -63,13 +72,14 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="dskfjsakfjaskfjlsda"/>
+        android:text="dskfjsakfjaskfjlsda"
+        android:id="@+id/txt1"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="dskfjsakfjaskfjlsda"
-        android:id="@+id/" />
+        android:id="@+id/txt2" />
 
 
 

@@ -62,7 +62,8 @@
         <activity android:name=".Multiple_choice"
             android:label="Multiple_choice"></activity>
         <activity android:name=".Step1Status"
-            android:label="Step1Status"></activity>
+            android:label="Step1Status">
+        </activity>
         <activity
             android:name=".Splash1"
             android:screenOrientation="portrait"
