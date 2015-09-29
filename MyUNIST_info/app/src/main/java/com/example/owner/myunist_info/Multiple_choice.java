@@ -34,8 +34,6 @@ public class Multiple_choice extends Activity{
             setContentView(R.layout.multiple);
             mcontext=this;
             findAllView();
-
-
         }
 
         void findAllView(){
@@ -234,6 +232,7 @@ public class Multiple_choice extends Activity{
                 intent.putExtra("designer",designer);
                 intent.putExtra("management",management);
                 startActivityForResult(intent, 1);
+                finish();
             }
 
         }

@@ -25,6 +25,7 @@ public class Multiple_choice_Intro extends Activity {
                     public void onClick(View v) {
                         Intent i = new Intent(mcontext,Multiple_choice.class);
                         startActivity(i);
+                        finish();
             }
         });
     }
