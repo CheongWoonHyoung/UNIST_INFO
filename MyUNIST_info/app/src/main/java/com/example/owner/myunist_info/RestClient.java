@@ -1,8 +1,14 @@
 package com.example.owner.myunist_info;
 
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+
 import java.util.List;
 
-import retrofit.Retrofit;
+import retrofit.Callback;
+import retrofit.RestAdapter;
+import retrofit.converter.GsonConverter;
 import retrofit.http.GET;
 import retrofit.http.Path;
 
@@ -14,14 +20,17 @@ public class RestClient {
     private static RestClient client;
 
     public RestClient() {
-        Retrofit restAdapter = new Retrofit.Builder()
-                .baseUrl("https://api.github.com")
+        Gson gson = new GsonBuilder().create();
+
+        RestAdapter restAdapter = new RestAdapter.Builder()
+                .setEndpoint("http://10.0.1.4:5000")
+                .setConverter(new GsonConverter(gson))
                 .build();
 
         service = restAdapter.create(UNISTService.class);
     }
 
-    public synchronized UNISTService getService() {
+    public static synchronized UNISTService getService() {
         if (client == null)
             client = new RestClient();
 
@@ -30,6 +39,6 @@ public class RestClient {
 
     public interface UNISTService {
         @GET("/list")
-        List<Announce> getAnnounces();
+        void getAnnounces(Callback<List<Announce>> callback);
     }
 }
