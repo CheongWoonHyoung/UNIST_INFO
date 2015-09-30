@@ -17,17 +17,15 @@ def announce():
         cursor.close()
         return '{result:"success"}'
 
-    #cursor = db.execute("SELECT * FROM `announce`;")
-    #data = cursor.fetchall()
-    #print data
-    #json.dumps(data)
-
     # GET : 공지사항 작성하기
     return render_template('announce.html')
 
-def get_json(cursor):
-    return json.dumps([ dict(line) for line in [zip([ column[0] for column in
-                     cursor.description], row) for row in cursor.fetchall()] ])
+@app.route('/list/', methods=['GET'])
+def list():
+    cursor = db.execute("SELECT * FROM `announce`;")
+    data = json.dumps(cursor.fetchall())
+
+    return data
 
 if __name__ == '__main__':
     init_server()
