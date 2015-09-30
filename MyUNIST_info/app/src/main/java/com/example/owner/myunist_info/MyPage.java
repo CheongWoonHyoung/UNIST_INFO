@@ -66,7 +66,7 @@ public class MyPage  extends Fragment {
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(mycontext,MyPage_Option.class);
+                Intent intent = new Intent(mycontext,AnnounceActivity.class);
                 startActivity(intent);
             }
         });

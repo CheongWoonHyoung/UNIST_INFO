@@ -53,24 +53,26 @@
         </activity>
         <activity
             android:name=".Multiple_choice_Intro"
-            android:label="Multiple_choice_Intro">
+            android:label="Multiple_choice_Intro" >
         </activity>
         <activity
             android:name=".Select_between_two"
-            android:label="Select_between_two">
+            android:label="Select_between_two" >
         </activity>
-        <activity android:name=".Multiple_choice"
-            android:label="Multiple_choice"></activity>
-        <activity android:name=".Step1Status"
-            android:label="Step1Status">
+        <activity
+            android:name=".Multiple_choice"
+            android:label="Multiple_choice" />
+        <activity
+            android:name=".Step1Status"
+            android:label="Step1Status" >
         </activity>
         <activity
             android:name=".Splash1"
-            android:screenOrientation="portrait"
             android:label="UNIST Info"
-            >
+            android:screenOrientation="portrait" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -86,6 +88,11 @@
         <activity
             android:name=".FAQ"
             android:label="FAQ" >
+        </activity>
+        <activity
+            android:name=".AnnounceActivity"
+            android:theme="@style/AnnounceTheme"
+            android:label="@string/title_activity_announce_list" >
         </activity>
     </application>
 
