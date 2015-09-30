@@ -27,107 +27,177 @@
         android:orientation="vertical">
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal"
-            android:background="#8185ff">
+            android:layout_height="match_parent"
+            android:background="#8185ff"
+            android:layout_margin="10dp"
+            android:elevation="15dp">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:id="@+id/imageView"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/engineering" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:background="#8185ff">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/engineering" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="과학/공학"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp" />
+                <ProgressBar
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/engine"
+                    android:max="12"
+                    android:progress="10"
+                    android:layout_gravity="center_vertical"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progressbar_custom" />
+
+            </LinearLayout>
 
             <TextView
-                android:layout_gravity="center_vertical"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="과학/공학"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
-                android:textSize="15dp"
-                android:layout_marginLeft="10dp" />
-            <ProgressBar
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/engine"
-                android:max="12"
-                android:progress="10"
-                android:layout_gravity="center_vertical"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:progressDrawable="@drawable/progressbar_custom" />
-
+                android:text="과학/공학에 대해 자신이 갖고 있는 관심과 적성을 기준으로 삼아 나타낸 결과입니다."
+                android:id="@+id/textView4"
+                android:textColor="#000000"
+                android:paddingLeft="45dp"
+                android:paddingRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:textSize="15dp" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal"
-            android:background="#f96480">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:id="@+id/imageView2"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/management" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f96480"
+            android:layout_margin="10dp"
+            android:elevation="15dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:background="#f96480">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView2"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/management" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="디자인"
+                    android:textSize="15dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:layout_marginLeft="10dp" />
+                <ProgressBar
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/design"
+                    android:max="12"
+                    android:progress="10"
+                    android:layout_gravity="center_vertical"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progressbar_custom" />
+
+            </LinearLayout>
 
             <TextView
-                android:layout_gravity="center_vertical"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="디자인"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="경영인이 지녀야 할 성격과 진로에 대한 흥미를 기준으로 분석한 결과입니다."
+                android:id="@+id/textView5"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
                 android:textSize="15dp"
-                android:textStyle="bold"
-                android:textColor="#FFFFFF"
-                android:layout_marginLeft="10dp" />
-            <ProgressBar
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/design"
-                android:max="12"
-                android:progress="10"
-                android:layout_gravity="center_vertical"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:progressDrawable="@drawable/progressbar_custom" />
-
+                android:textColor="#000000"
+                android:paddingLeft="45dp"
+                android:paddingRight="15dp" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="80dp"
-            android:orientation="horizontal"
-            android:background="#a8d565">
 
-            <ImageView
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:id="@+id/imageView3"
-                android:layout_gravity="center_vertical"
-                android:layout_marginLeft="15dp"
-                android:background="@drawable/design" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#a8d565"
+            android:elevation="15dp"
+            android:layout_margin="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:orientation="horizontal"
+                android:background="#a8d565">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/imageView3"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:background="@drawable/design" />
+
+                <TextView
+                    android:layout_gravity="center_vertical"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:text="경영"
+                    android:textColor="#FFFFFF"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginLeft="10dp" />
+                <ProgressBar
+                    android:background="#c97dd5"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/manage"
+                    android:max="12"
+                    android:progress="10"
+                    android:layout_gravity="center_vertical"
+                    style="?android:attr/progressBarStyleHorizontal"
+                    android:progressDrawable="@drawable/progressbar_custom" />
+
+            </LinearLayout>
 
             <TextView
-                android:layout_gravity="center_vertical"
-                android:layout_width="100dp"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="경영"
-                android:textColor="#FFFFFF"
-                android:textStyle="bold"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="디자이너의 소양 중 시각적 요인에 대한 관찰과 설계를 중요지표로 삼았습니다."
+                android:id="@+id/textView6"
+                android:paddingLeft="45dp"
+                android:paddingRight="15dp"
                 android:textSize="15dp"
-                android:layout_marginLeft="10dp" />
-            <ProgressBar
-                android:background="#c97dd5"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:id="@+id/manage"
-                android:max="12"
-                android:progress="10"
-                android:layout_gravity="center_vertical"
-                style="?android:attr/progressBarStyleHorizontal"
-                android:progressDrawable="@drawable/progressbar_custom" />
-
+                android:textColor="#000000"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_marginRight="15dp" />
         </LinearLayout>
 
 
