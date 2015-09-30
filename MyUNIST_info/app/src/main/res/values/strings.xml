@@ -42,4 +42,5 @@
     <string name="sample_school">학부소개</string>
     <string name="sample_track">학과소개</string>
     <string name="title_activity_send_email_for_gift">SendEmailForGift</string>
+    <string name="title_activity_announce_list">AnnounceList</string>
 </resources>
