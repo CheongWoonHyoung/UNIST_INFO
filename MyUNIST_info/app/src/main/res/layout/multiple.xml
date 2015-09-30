@@ -5,50 +5,34 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:background="#ff000000">
-        <LinearLayout
-            android:layout_weight="1"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-            <Button
-                android:text="1번 선택지"
-                android:id="@+id/btn_selector1"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#ffdf5e"
-                android:textSize="25dp"/>
-            <Button
-                android:text="2번 선택지"
-                android:id="@+id/btn_selector2"
-                android:layout_weight="1"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="#acff5b"
-                android:textSize="25dp"/>
+        android:background="#009688">
 
-        </LinearLayout>
         <LinearLayout
-            android:background="#dfdfdf"
+            android:background="#FFFFFF"
             android:layout_width="match_parent"
             android:layout_height="90dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:elevation="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp">
 
             <TextView
                 android:id="@+id/tv_question"
-                android:layout_marginTop="10dp"
                 android:layout_marginLeft="30dp"
                 android:layout_width="250dp"
                 android:layout_height="wrap_content"
                 android:text="질문 준비 중 입니다."
                 android:textSize="20dp"
-                android:textColor="#ff000000"/>
+                android:textColor="#ff000000"
+                android:textStyle="bold" />
             <TextView
                 android:id="@+id/tv_q_number"
                 android:layout_marginRight="10dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginTop="10dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="1/20"
@@ -58,27 +42,65 @@
 
 
         </LinearLayout>
+
         <LinearLayout
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal">
+            android:orientation="vertical">
+            <Button
+                android:text="1번 선택지"
+                android:id="@+id/btn_selector1"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fba733"
+                android:textSize="18dp"
+                android:layout_margin="15dp"
+                android:gravity="left|center_vertical"
+                android:paddingLeft="20dp" />
+            <Button
+                android:text="2번 선택지"
+                android:id="@+id/btn_selector2"
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#fffacb4d"
+                android:textSize="18dp"
+                android:layout_margin="15dp"
+                android:paddingLeft="20dp"
+                android:gravity="left|center_vertical" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
             <Button
                 android:text="3번 선택지"
                 android:id="@+id/btn_selector3"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#64ffc6"
-                android:textSize="25dp"/>
+                android:background="#fffbef91"
+                android:textSize="18dp"
+                android:layout_margin="15dp"
+                android:paddingLeft="20dp"
+                android:gravity="left|center_vertical" />
             <Button
                 android:text="4번 선택지"
                 android:id="@+id/btn_selector4"
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="#bf67ff"
-                android:textSize="25dp"/>
+                android:background="#FFFFFF"
+                android:textSize="18dp"
+                android:layout_margin="15dp"
+                android:fontFamily="\@assets/dohyun"
+                android:paddingLeft="20dp"
+                android:gravity="left|center_vertical" />
 
         </LinearLayout>
     </LinearLayout>
