@@ -117,8 +117,8 @@ public class SendEmailForGift extends Activity implements View.OnClickListener {
                 List<NameValuePair> params = new ArrayList<NameValuePair>();
                 username = URLEncoder.encode(username,"UTF-8");
                 params.add(new BasicNameValuePair("username", username));
+                school = URLEncoder.encode(school,"UTF-8");
                 params.add(new BasicNameValuePair("school", school));
-                username = URLEncoder.encode(school,"UTF-8");
                 params.add(new BasicNameValuePair("phone", phone));
                 params.add(new BasicNameValuePair("stat", Number));
 
