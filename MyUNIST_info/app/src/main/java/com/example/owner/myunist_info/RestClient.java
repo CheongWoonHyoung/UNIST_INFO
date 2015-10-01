@@ -23,7 +23,7 @@ public class RestClient {
         Gson gson = new GsonBuilder().create();
 
         RestAdapter restAdapter = new RestAdapter.Builder()
-                .setEndpoint("http://10.0.1.4:5000")
+                .setEndpoint("http://52.68.202.214:5000")
                 .setConverter(new GsonConverter(gson))
                 .build();
 
