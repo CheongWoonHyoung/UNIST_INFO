@@ -179,6 +179,7 @@ public class Attendance extends Activity {
                 } else if (NumberOfCheck >=5) {
                     //NumberOfCheck--;
                     Intent intent = new Intent(getApplicationContext(), SendEmailForGift.class);
+                    intent.putExtra("no",NumberOfCheck);
                     startActivity(intent);
 
                 }
