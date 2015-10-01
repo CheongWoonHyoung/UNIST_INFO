@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="#fba733">
 
         <TextView
@@ -36,7 +36,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="#8185ff">
 
@@ -93,7 +93,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="#f96480">
 
@@ -151,7 +151,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="#a8d565">
 
@@ -202,25 +202,26 @@
 
 
     </LinearLayout>
-
-
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_gravity="center"
-        android:text="dskfjsakfjaskfjlsda"
-        android:id="@+id/txt2"
-        android:textSize="15dp"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:background="#000000"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:text="dskfjsakfjaskfjlsda"
+            android:id="@+id/txt2"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="15dp" />
 
-
+    </ScrollView>
 
 </LinearLayout>

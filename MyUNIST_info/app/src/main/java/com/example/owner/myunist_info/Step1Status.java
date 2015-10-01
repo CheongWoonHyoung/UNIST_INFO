@@ -38,25 +38,25 @@ public class Step1Status extends Activity {
             conclusion.setText("더 열심히 노력하여 자신의 재능을 발굴해 보는게 어떨까요?");
         }
         else if(engineering >= 6 && designer >= 6 && management >= 6){
-            conclusion.setText("당신은 과학 및 공학 분야와 경영학 분야 그리고 디자인 분야에 모두 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 다양한 학부들을 더 탐구해 보는것은 어떨까요?");
+            conclusion.setText("당신은 과학 및 공학 분야와 경영학 분야 그리고 디자인 분야에 모두 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 다양한 학부들을 더 탐구해 보는것은 어떨까요? \n");
         }
         else if(engineering >= 6 && designer < 6 && management < 6){
-            conclusion.setText("당신은 공학, 과학 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 다양한 이공계 학부들을 더 탐구해 보는것은 어떨까요?");
+            conclusion.setText("당신은 공학, 과학 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 다양한 이공계 학부들을 더 탐구해 보는것은 어떨까요?\n");
         }
         else if (designer >= 6 && engineering < 6 && management < 6){
-            conclusion.setText("당신은 디자인 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 디자인 및 인간 공학부를 더 탐구해 보는것은 어떨까요?");
+            conclusion.setText("당신은 디자인 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 디자인 및 인간 공학부를 더 탐구해 보는것은 어떨까요?\n");
         }
         else if(management >= 6 && designer < 6 && engineering < 6){
-            conclusion.setText("당신은 경영학 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 경영학부를 더 탐구해 보는것은 어떨까요?");
+            conclusion.setText("당신은 경영학 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 경영학부를 더 탐구해 보는것은 어떨까요?\n");
         }
         else if(engineering >= 6 && designer >= 6 && management < 6){
-            conclusion.setText("당신은 과학 및 공학 분야와 디자인 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 다양한 이공계 학부들과 디자인 및 인간 공학부를 더 탐구해 보는것은 어떨까요?");
+            conclusion.setText("당신은 과학 및 공학 분야와 디자인 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 다양한 이공계 학부들과 디자인 및 인간 공학부를 더 탐구해 보는것은 어떨까요?\n");
         }
         else if(engineering >= 6 && management >= 6 && designer < 6){
-            conclusion.setText("당신은 경영학 분야와 공학 및 과학 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 경영학부와 다양한 이공계 학부들을 더 탐구해 보는것은 어떨까요?");
+            conclusion.setText("당신은 경영학 분야와 공학 및 과학 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 경영학부와 다양한 이공계 학부들을 더 탐구해 보는것은 어떨까요?\n");
         }
         else if(management >= 6 && designer >= 6 && engineering < 6){
-            conclusion.setText("당신은 공학 및 과학 분야와 디자인 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 다양한 이공계 학부들과 디자인 및 인간 공학부를 더 탐구해 보는것은 어떨까요?");
+            conclusion.setText("당신은 공학 및 과학 분야와 디자인 분야에 재능과 소질이 있어 보입니다. UNIST INFO 어플리케이션에서 다양한 이공계 학부들과 디자인 및 인간 공학부를 더 탐구해 보는것은 어떨까요?\n");
         }
 
     }
