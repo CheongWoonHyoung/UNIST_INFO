@@ -25,8 +25,10 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.UnsupportedEncodingException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -88,6 +90,17 @@ public class SendEmailForGift extends Activity implements View.OnClickListener {
             pDialog.setCancelable(true);
             pDialog.show();
         }
+        /*
+        @Override
+        public static String getURLEncode(String content){
+            try {
+//          return URLEncoder.encode(content, "utf-8");   // UTF-8
+                return URLEncoder.encode(content, "euc-kr");  // EUC-KR
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+            return null;
+        }*/
 
         @Override
         protected String doInBackground(String... args) {
@@ -102,8 +115,10 @@ public class SendEmailForGift extends Activity implements View.OnClickListener {
             try {
                 // Building Parameters
                 List<NameValuePair> params = new ArrayList<NameValuePair>();
+                username = URLEncoder.encode(username,"UTF-8");
                 params.add(new BasicNameValuePair("username", username));
                 params.add(new BasicNameValuePair("school", school));
+                username = URLEncoder.encode(school,"UTF-8");
                 params.add(new BasicNameValuePair("phone", phone));
                 params.add(new BasicNameValuePair("stat", Number));
 
@@ -127,6 +142,9 @@ public class SendEmailForGift extends Activity implements View.OnClickListener {
 
                 }
             } catch (JSONException e) {
+                e.printStackTrace();
+            }
+            catch (UnsupportedEncodingException e) {
                 e.printStackTrace();
             }
 
