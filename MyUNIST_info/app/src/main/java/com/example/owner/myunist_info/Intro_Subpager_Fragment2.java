@@ -155,19 +155,19 @@ public class Intro_Subpager_Fragment2 extends Fragment {
                 switch(department_id){
                     case 8:
                         department.setText("자연과학부");
-                        item.add(new SubjectListItem("전자기학","","물리학"));
-                        item.add(new SubjectListItem("양자물리학","","물리학"));
-                        item.add(new SubjectListItem("수리물리학","","물리학"));
-                        item.add(new SubjectListItem("현대물리학","","물리학"));
-                        item.add(new SubjectListItem("현대대수학","","수리과학"));
-                        item.add(new SubjectListItem("수치해석","","수리과학"));
-                        item.add(new SubjectListItem("위상수학","","수리과학"));
-                        item.add(new SubjectListItem("미분기하","","수리과학"));
-                        item.add(new SubjectListItem("유기화학","","화학"));
-                        item.add(new SubjectListItem("물리화학","","화학"));
-                        item.add(new SubjectListItem("분석화학","","화학"));
-                        item.add(new SubjectListItem("무기화학","","화학"));
-                        item.add(new SubjectListItem("나노화학공정입문","","화학"));
+                        item.add(new SubjectListItem("전자기학", "전기 및 자기장에 관한 기초이론을 다룬다. 주요 내용으로는 벡터이론, 쿨롱의 법칙, 가우스의 법칙, 다이버전스(발산) 이론, 에너지 및 전위차, 도체 및 유전체의 전기장에서의 특성, 라플라스 방정식 등을 포함합니다.", "물리학"));
+                        item.add(new SubjectListItem("양자물리학","원자 및 분자, 그리고 그보다 더 작은 미시 세계를 물리학적으로 이해하기 위해서 기본적으로 배워야 할 내용입니다. 실제 전자와 원자, 다체계 등을 구체적으로 이해하는 것을 목적으로 하는 과목입니다. ","물리학"));
+                        item.add(new SubjectListItem("수리물리학","물리학을 위해 필요한 수학을 강의합니다. 벡터해석, 선형대수, 변분법, 복소변수 등을 공부합니다.","물리학"));
+                        item.add(new SubjectListItem("현대물리학","19세기 말부터 20세기 초에 발견된 빛과 물질의 상호작용에 의한 물리 현상들 중에서 고전적인 물리 이론으로 설명할 수 없는 것들을 이해하기 위하여 새로운 이론들이 나올 수 밖에 없었습니다. 특수 상대론과 양자역학의 기본 개념과 그러한 이론들이 나오게 만든 중요한 발견들에 대해서 학습합니다. ","물리학"));
+                        item.add(new SubjectListItem("현대대수학","군, 순환군, 치환군, 부분군, 정규부분군, 잉여군, 준동형사상, 동형사상, 집합에서의 군작용, 환, 정역 등의 정의 와 기본성질과 개념을 이해하고 고급현대대수학에서 다룰 체 이론의 기본이 되게 합니다.","수리과학"));
+                        item.add(new SubjectListItem("수치해석","군, 순환군, 치환군, 부분군, 정규부분군, 잉여군, 준동형사상, 동형사상, 집합에서의 군작용, 환, 정역 등의 정의 와 기본성질과 개념을 이해하고 고급현대대수학에서 다룰 체 이론의 기본이 되게 합니다.","수리과학"));
+                        item.add(new SubjectListItem("위상수학","위상수학의 기본개념들에 대하여 알아봅니다. 특히, 위상공간, 거리공간, 연속사상, 옹공간, 연결공간 등, 집합적 위상수학의 기초내용을, 기하학적 의미를 강조하며 학습합니다. ","수리과학"));
+                        item.add(new SubjectListItem("미분기하","미분기하학은 미적분을 이용하여 기하학적 도형을 연구하는 학문입니다. 3차원 유클리드공간에서의 곡선과 곡면에 대한 내용을 다룹니다. ","수리과학"));
+                        item.add(new SubjectListItem("유기화학","생명의 화학인 유기화학은 생물학적인 현상을 이해하는 분야입니다. 기본적인 유기화학에 사용되는 용어와 유기화학 반응의 메카니즘을 익힙니다.","화학"));
+                        item.add(new SubjectListItem("물리화학","기본 원리를 이해하는 것과 실제 화학 현상의 설명에 응용하는 능력을 배양합니다. 물리화학은 크게 평형 (열역학), 구조 (양자역학), 변화(속도론 및 동력학)으로 구성됩니다.","화학"));
+                        item.add(new SubjectListItem("분석화학","물질의 조성 및 특정성분의 함량을 알아내는 원리 및 기법을 배우는 과목입니다. 크게 네 분야로 나누어져 있으며 (습식분석, 전기분석, 분광분석, 크로마토그래피) 각 분야에 대한 개론을 소개합니다. ","화학"));
+                        item.add(new SubjectListItem("무기화학","원자구조, 화학결합이론, 대칭 및 그룹이론, 분자 오비탈, 주족원소 산-염기 개념과 그와 관련된 화학, 결정성 고체화학, 그리고 배위화학을 주제로 이들을 설명하기 위한 이론적 배경과 화학적, 물리적 특성 등에 대해 학습합니다. ","화학"));
+                        item.add(new SubjectListItem("나노화학공정입문","나노공정에 대하여 전반적으로 학습하고 신개발 나노물질 및 나노화학기반 소자의 특성을 이해합니다.","화학"));
 
                         sub_list.setAdapter(adapter);
                         break;
