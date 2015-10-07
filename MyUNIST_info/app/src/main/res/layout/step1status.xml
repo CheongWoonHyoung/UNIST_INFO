@@ -6,7 +6,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="100dp"
+        android:layout_height="80dp"
         android:background="#fba733">
 
         <TextView
@@ -36,7 +36,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="#8185ff">
 
@@ -93,7 +93,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="#f96480">
 
@@ -130,7 +130,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="경영인이 지녀야 할 성격과 진로에 대한 흥미를 기준으로 분석한 결과입니다."
+                android:text="디자이너의 소양 중 시각적 요인에 대한 관찰과 설계를 중요지표로 삼았습니다."
                 android:id="@+id/textView5"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
@@ -151,7 +151,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="60dp"
+                android:layout_height="50dp"
                 android:orientation="horizontal"
                 android:background="#a8d565">
 
@@ -189,7 +189,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textAppearance="?android:attr/textAppearanceMedium"
-                android:text="디자이너의 소양 중 시각적 요인에 대한 관찰과 설계를 중요지표로 삼았습니다."
+                android:text="경영인이 지녀야 할 성격과 진로에 대한 흥미를 기준으로 분석한 결과입니다."
                 android:id="@+id/textView6"
                 android:paddingLeft="45dp"
                 android:paddingRight="15dp"
@@ -202,25 +202,26 @@
 
 
     </LinearLayout>
-
-
-    <TextView
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:layout_marginLeft="10dp"
-        android:layout_marginRight="10dp"
-        android:layout_gravity="center"
-        android:text="dskfjsakfjaskfjlsda"
-        android:id="@+id/txt2"
-        android:textSize="15dp"
-        android:textAlignment="center"
-        android:textColor="#FFFFFF"
-        android:background="#000000"
-        android:paddingLeft="10dp"
-        android:paddingTop="10dp"
-        android:paddingRight="10dp"
-        android:layout_marginBottom="15dp" />
+        android:layout_height="fill_parent">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center"
+            android:text="dskfjsakfjaskfjlsda"
+            android:id="@+id/txt2"
+            android:textSize="15dp"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:background="#000000"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:layout_marginBottom="15dp" />
 
-
+    </ScrollView>
 
 </LinearLayout>
