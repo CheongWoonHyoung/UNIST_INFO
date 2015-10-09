@@ -152,7 +152,7 @@
                 android:id="@+id/check_ece"
                 android:layout_width="70dp"
                 android:layout_height="70dp"
-                android:background="@drawable/ece"
+                android:background="@drawable/eche"
                 android:elevation="9dp" />
             <FrameLayout
                 android:id="@+id/unchecked_ece"
