@@ -23,9 +23,16 @@ def announce():
 @app.route('/list/', methods=['GET'])
 def list():
     cursor = db.execute("SELECT * FROM `announce`;")
-    data = json.dumps(cursor.fetchall())
+    return render_template('list.html', data = cursor.fetchall())
 
-    return data
+@app.route('/delete/<id>', methods=['GET'])
+def delete(id):
+    cursor = db.execute("DELETE FROM `announce` WHERE `id`=" + id + ";")
+    return u'삭제하였습니다.'
+
+@app.template_global()
+def get_length(item):
+    return len(item)
 
 if __name__ == '__main__':
     init_server()

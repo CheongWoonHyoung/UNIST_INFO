@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon">
+
+        <title>유니스트 영재교육원</title>
+        <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+        <link href="/static/css/style.css" rel="stylesheet">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="/static/js/jquery-1.11.3.min.js"></script>
+        <script src="/static/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="page-header">
+                <h1>유니스트 영재교육원</h1>
+                <h5>공지사항</h5>
+            </div>
+            <div class="header-text">
+                <p>
+                    영재교육원 어플리케이션 공지사항입니다.
+                </p>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-body" id="contents">
+                    <center>이곳에 공지사항 내용이 출력됩니다.</center>
+                </div>
+                <table class="table table-hover">
+                    {% if get_length(data) != 0 %}
+                    <tr>
+                        <th>#</th>
+                        <th>제목</th>
+                        <th>삭제</th>
+                    </tr>
+                        {% for i in range(get_length(data)) %}
+                            <tr>
+                                <td>{{ i + 1 }}</td>
+                                <td>{{ data[i]['title'] }}</td>
+                                <td><a href="#" class="btn btn-primary btn-xs" id="view_{{ i }}">보기</a>  <a href="{{ url_for('delete', id = data[i]['id']) }}" class="btn btn-danger btn-xs">삭제</a></td>
+                            </tr>
+                        {% endfor %}
+                    {% endif %}
+                </table>
+            </div>
+
+            <footer class ="footer-edit">
+                <p class="pull-right">
+                    <a href="{{ url_for('announce') }}">공지사항 쓰러 가기</a>
+                </p>
+                <p>UNIST NPC</p>
+            </footer>
+        </div>
+    </body>
+
+    <script type="text/javascript">
+        {% for i in range(get_length(data)) %}
+            $('#view_{{ i }}').click(function() {
+                $('#contents').text("{{ data[i]['content'].replace('\n', '_enter_') }}");
+                document.getElementById('contents').innerHTML = document.getElementById('contents').innerHTML.replace(/_enter_/g, "<br />");
+            });
+        {% endfor %}
+    </script>
+</html>
