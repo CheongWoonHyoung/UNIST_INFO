@@ -135,7 +135,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                     case 3:
                         intro_track.setText("트랙 소개");
                         track_name.setText("전기 및 전자공학");
-                        content.setText("  반도체 소자 및 집적회로(IC) 설계에서부터 정보, 통신 및 제어 시스템 구축에 이르기까지 전기 및 전자 공학의 다양한 분야를 포괄하는 분야로써, 미래 인류 생활의 편의를 도모하고 안전한 정보 사회 구축에 필수적인 IT 융합 시스템의 연구 및 개발에 초점을 맞추고 있습니다.   \n \n  전자공학트랙은 다양한 IT 기반 기술 분야들 간의 적극적인 융합을 통해 디지털 컨버전스로 대표되는 유비쿼터스 정보 사회를 이룩하는데 이바지하고자 하며, 관련 연구 반야는 무선 통신 및 네트워크, 지능 제어 및 인간-친화형 로봇 시스템, 멀티미디어 신호 처리, 디지털/아날로그 회로 설계, VLSI 디자인, 고속 Mixed-Signal IC, RF 및 Wireless IC 디자인 등을 포함하고 있습니다.   \n \n  전자공학 트랙에서는 실험, 디자인, 모델링, 시뮬레이션 및 분석 등에 이르는 다양한 교육 과정을 통해 전자제품의 기획단계에서부터 시제품 완성에 이르는 전 과정을 경험할 기회를 제공함으로써 실용과 학문을 겸비한 유능한 공학인을 양성하는 것을 목표로 합니다.   \n \n  또한 학생들이 기초과학적 지식을 공학적 응용에 적응하는능력을 함양하도록 교육함으로써 미래 혁신 기술 개발에 선도자가 되도록 하며 학생들은 핵심 물리 교과목과 함께 반도체 공학, 광전자 소자, 플라즈마 등을 배우게 됩니다.   \n \n  ");
+                        content.setText("  반도체 소자 및 집적회로(IC) 설계에서부터 정보, 통신 및 제어 시스템 구축에 이르기까지 전기 및 전자 공학의 다양한 분야를 포괄하는 분야로써, 미래 인류 생활의 편의를 도모하고 안전한 정보 사회 구축에 필수적인 IT 융합 시스템의 연구 및 개발에 초점을 맞추고 있습니다.   \n \n  전자공학트랙은 다양한 IT 기반 기술 분야들 간의 적극적인 융합을 통해 디지털 컨버전스로 대표되는 유비쿼터스 정보 사회를 이룩하는데 이바지하고자 하며, 관련 연구 분야는 무선 통신 및 네트워크, 지능 제어 및 인간-친화형 로봇 시스템, 멀티미디어 신호 처리, 디지털/아날로그 회로 설계, VLSI 디자인, 고속 Mixed-Signal IC, RF 및 Wireless IC 디자인 등을 포함하고 있습니다.   \n \n  전자공학 트랙에서는 실험, 디자인, 모델링, 시뮬레이션 및 분석 등에 이르는 다양한 교육 과정을 통해 전자제품의 기획단계에서부터 시제품 완성에 이르는 전 과정을 경험할 기회를 제공함으로써 실용과 학문을 겸비한 유능한 공학인을 양성하는 것을 목표로 합니다.   \n \n  또한 학생들이 기초과학적 지식을 공학적 응용에 적응하는능력을 함양하도록 교육함으로써 미래 혁신 기술 개발에 선도자가 되도록 하며 학생들은 핵심 물리 교과목과 함께 반도체 공학, 광전자 소자, 플라즈마 등을 배우게 됩니다.   \n \n  ");
                         break;
                     case 4:
                         intro_track.setText("트랙 소개");
@@ -255,26 +255,26 @@ public class Intro_Subpager_Fragment extends Fragment{
                         break;
                     case 3:
                         department.setText("전기전자컴퓨터공학부");
-                        item.add(new SubjectListItem("전자회로",getString(R.string.ece_1),"전기전자공학"));
-                        item.add(new SubjectListItem("전자소자개론",getString(R.string.ece_2),"전기전자공학"));
-                        item.add(new SubjectListItem("신호및시스템",getString(R.string.ece_3),"전기전자공학"));
-                        item.add(new SubjectListItem("디지털신호처리",getString(R.string.ece_4),"전기전자공학"));
-                        item.add(new SubjectListItem("운영체제",getString(R.string.ece_5),"컴퓨터공학"));
-                        item.add(new SubjectListItem("알고리즘",getString(R.string.ece_6),"컴퓨터공학"));
-                        item.add(new SubjectListItem("컴퓨터 그래픽스",getString(R.string.ece_7),"컴퓨터공학"));
-                        item.add(new SubjectListItem("컴퓨터 네트워크",getString(R.string.ece_8),"컴퓨터공학"));
+                        item.add(new SubjectListItem("전자회","회로에 대한 기초이론과 직.교류의 일반적인 제현상을 이해하여 전기, 전자통신, 반도체 전공분야의 여러 가지 교과목 학습을 위한 기초 능력과 각 전공과 관련된 회로 해석 능력을 배양합니다.","전기전자공학"));
+                        item.add(new SubjectListItem("전자소자개론","전기회로 관련 전공 기본 이론과 그 이론을 실험에 응용할 수 있는 능력을 배양하고, 전기회로에 관련 기본적인 실험을 계획하고 이를 수행할 수 있는 능력을 고양합니다.","전기전자공학"));
+                        item.add(new SubjectListItem("신호및시스템","디지털 신호를 해석하고 처리하는 제반 방법에 대한 이론적인 접근과 실질적인 구현할 수 있도록 합니다.","전기전자공학"));
+                        item.add(new SubjectListItem("디지털신호처리","운영체제의 기본개념과 운영체제를 구성하는 서브시스템 즉, 프로세스 관리(프로세서와 쓰레드, CPU 스케쥴링, 프로세스 동기화, 교착상태), 저장장치 관리(메모리 관리, 가상메모리, 파일시스템)등 내용을 학습합니다","전기전자공학"));
+                        item.add(new SubjectListItem("운영체제","운영체제의 기본개념과 운영체제를 구성하는 서브시스템 즉, 프로세스 관리(프로세서와 쓰레드, CPU 스케쥴링, 프로세스 동기화, 교착상태), 저장장치 관리(메모리 관리, 가상메모리, 파일시스템)등 내용을 학습합니다. ","컴퓨터공학"));
+                        item.add(new SubjectListItem("알고리즘","일반적으로 널리 알려진 알고리즘의 예 및 대표적인 응용 분야에 적용되는 알고리즘의 설계기법 및 분석과정을 배우며 알고리즘의 복잡도를 분석하고 효율적인 알고리즘을 설계하는 기법을 익힙니다.\n","컴퓨터공학"));
+                        item.add(new SubjectListItem("컴퓨터 그래픽스","컴퓨터 그래픽스의 개념을 공학적 관점에서 어떻게 하면 현실에서 효율적이고 구체적으로 적용할 수 있는지 살펴보고 학습합니다.","컴퓨터공학"));
+                        item.add(new SubjectListItem("컴퓨터 네트워크","컴퓨터 네트워크의 계층적인 프로토콜 구조를 이해하고 특히 인터넷에서 사    용되고 있는 응용 프로그램, 트랜스포트 프로토콜, 라우팅 알고리즘과 프로토콜, 데이터센터, 무선모바일 네트워크에 대하여 집중적으로 학습합니다.","컴퓨터공학"));
                         sub_list.setAdapter(adapter);
                         break;
                     case 4:
                         department.setText("생명과학부");
-                        item.add(new SubjectListItem("생명공학개론","","생명공학"));
-                        item.add(new SubjectListItem("바이오기기분석","","생명공학"));
-                        item.add(new SubjectListItem("생체유기역학","","생명공학"));
-                        item.add(new SubjectListItem("바이오재료 및 조직공학","","생명공학"));
-                        item.add(new SubjectListItem("생화학","","생명과학"));
-                        item.add(new SubjectListItem("발생학","","생명과학"));
-                        item.add(new SubjectListItem("세포생물학","","생명과학"));
-                        item.add(new SubjectListItem("해부 및 생리학","","생명과학"));
+                        item.add(new SubjectListItem("생명공학개론", "생명과학 분야의 중요한 이슈들에 대한 이해와 탐구에 도전해 볼 수 있는 필수 과목이다. 주제들은 생화학과 유전학, 생리학, 진화론, 그리고 생태학을 포함합니다.", "생명공학"));
+                        item.add(new SubjectListItem("바이오기기분석","각종 크로마토그래피의 이론과 분석기기에 관하여 설명하고, 생화학 또는 분자생물학의 연구 수행에 필요한 기기분석에 대하여 강의합니다. ","생명공학"));
+                        item.add(new SubjectListItem("생체유기역학","유기화학의 기본 개념과 생명체로부터 생성되는 각종 유기화합물의 구조와 기능에 대해 강의합니다. ","생명공학"));
+                        item.add(new SubjectListItem("바이오재료 및 조직공학","생체재료 종류와 이론에 대해 배우며, 생체조직재생기술의 발전과 조직공학적 기능에 대해 배웁니다.","생명공학"));
+                        item.add(new SubjectListItem("생화학","생명과학 전공자를 위해 반응속도론, 양자화학, 기초물리화학 실험의 이론적 원리 등에 대해 강의합니다.","생명과학"));
+                        item.add(new SubjectListItem("발생학","감수분열과정을 거쳐 만들어진 배우자가 수정 후 개체 발생에 이르는 전 과정을 이해하고 세포 분화의 기작, 배발생 및 기관발생 과정을 분자생물학 또는 세포생물학의 관점에서 이해합니다. ","생명과학"));
+                        item.add(new SubjectListItem("세포생물학","세포와 세포 사이의 기능 관계를 비롯하여 장기와 장기의 기능 관계, 그 유기적 상관관계를 주로 다룹니다. ","생명과학"));
+                        item.add(new SubjectListItem("해부 및 생리학","몸의 기능과 구조에 대해 공부하여 궁극적으로 약이 어떻게 몸의 기능에 영향을 미치는지를 이해하고자 합니다.","생명과학"));
                         sub_list.setAdapter(adapter);
                         break;
                     case 5:
@@ -286,7 +286,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         item.add(new SubjectListItem("기계요소설계",getString(R.string.mne_5),"기계공학"));
                         item.add(new SubjectListItem("원자력공학개론",getString(R.string.mne_6) + "\n","원자력공학"));
                         item.add(new SubjectListItem("원자력방사선공학및실험",getString(R.string.mne_7),"원자력공학"));
-                        item.add(new SubjectListItem("원자력재료공학및실험",getString(R.string.mne_8),"원자력공학"));
+                        item.add(new SubjectListItem("원자력재료공학및실험","물성, 미세구조, 공정 사이의 상관관계를 통하여 원자력의 여러 분야에서 이용되는 재료들에 대한 기초적인 이해를 얻고자 합니다. 재료의 원자 및 결정구조, 결함, 확산, 미세구조, 방사선 조사 영향 등에 대한 지식을 제공합니다. ","원자력공학"));
                 
 
                         sub_list.setAdapter(adapter);
@@ -314,7 +314,7 @@ public class Intro_Subpager_Fragment extends Fragment{
                         item.add(new SubjectListItem("생산관리",getString(R.string.ba_5),"경영학"));
                         item.add(new SubjectListItem("경영전략",getString(R.string.ba_6),"경영학"));
                         item.add(new SubjectListItem("재무회계",getString(R.string.ba_7),"재무/회계학"));
-                        item.add(new SubjectListItem("관리회계",getString(R.string.ba_8),"재무/회계학"));
+                        item.add(new SubjectListItem("관리회계","경영자가 원가정보를 사용하여 계획을 수립, 실행하고 성과를 평가하며, 의사결정을 하는데 필요한 개념과 절차연구.","재무/회계학"));
                         item.add(new SubjectListItem("재무관리",getString(R.string.ba_9),"재무/회계학"));
                         item.add(new SubjectListItem("경영통계분석",getString(R.string.ba_10),"재무/회계학"));
                         item.add(new SubjectListItem("미시경제학",getString(R.string.ba_11),"재무/회계학"));

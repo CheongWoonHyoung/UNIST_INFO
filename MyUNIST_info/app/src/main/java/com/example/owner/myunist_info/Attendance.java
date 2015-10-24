@@ -174,11 +174,12 @@ public class Attendance extends Activity {
         clear.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if (NumberOfCheck <5) {
+                if (NumberOfCheck <4) {
                     Toast.makeText(Attendance.this, "참여 횟수가 부족합니다", Toast.LENGTH_SHORT).show();
-                } else if (NumberOfCheck >=5) {
+                } else if (NumberOfCheck >=4) {
                     //NumberOfCheck--;
                     Intent intent = new Intent(getApplicationContext(), SendEmailForGift.class);
+                    intent.putExtra("no",NumberOfCheck);
                     startActivity(intent);
 
                 }
